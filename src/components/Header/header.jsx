@@ -1,4 +1,6 @@
 import React from "react";
+import linkedinIcon from "../../../src/Images/CSS/linkedin.png"
+import instagramIcon from "../../../src/Images/CSS/ig.png"
 
 const Header = () => {
 return (
@@ -13,25 +15,25 @@ return (
         <a href="gis">GIS</a>
             <div className="dropdown">
               <a href="Classification">Classification</a>
-              <a href="Client Consultant">Client Consultant</a>
-              <a href="Density Relation">Density Relation</a>
-              <a href="Senior Project 2020">Senior Project 2020</a>
+              <a href="ClientConsultant">Client Consultant</a>
+              <a href="DensityRelation">Density Relation</a>
+              <a href="SeniorProject2020">Senior Project 2020</a>
             </div>
         </li>
         <li>
         <a href="urban-planning">Urban Planning</a>
             <div className="dropdown">
-              <a href="#">Ferndale, WA Comprehensive Plan</a>
-              <a href="#">Hazards Mitigation Plan</a>
-              <a href="#">Housing Action Plan 2019</a>
-              <a href="#">Monroe, WA Community Outreach</a>
+              <a href="FerndaleWA">Ferndale, WA Comprehensive Plan</a>
+              <a href="HazardsMitigationPlan">Hazards Mitigation Plan</a>
+              <a href="HousingActionPlan">Housing Action Plan 2019</a>
+              <a href="MonroeWA">Monroe, WA Community Outreach</a>
             </div>
         </li>
         <li>
         <a href="software-engineering">Software Engineering</a>
             <div className="dropdown">
-              <a href="#">Personal Finance Breakdown</a>
-              <a href="#">NBA Application</a>
+              <a href="PersonalFinance">Personal Finance Breakdown</a>
+              <a href="NBA">NBA Application</a>
               <a href="#">Coming Soon</a>
             </div>
         </li>
@@ -39,10 +41,10 @@ return (
     </nav>
     <div className="social-icons">
         <a href="https://www.linkedin.com/in/joechang022/">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" className="icon"/>
+          <img src={linkedinIcon} alt="LinkedIn" className="icon"/>
         </a>
         <a href="https://www.instagram.com/joea_chang/">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" alt="Instagram" className="icon"/>
+          <img src={instagramIcon} alt="Instagram" className="icon"/>
         </a>
     </div>
     </header>
