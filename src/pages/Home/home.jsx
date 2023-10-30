@@ -1,4 +1,4 @@
-import React from "react";
+
 import Resume from "../src/Images/CSS/GIS_Resume.pdf";
 import ProfilePicture from "../src/Images/CSS/Profile.jpg";
 import '../index.css';
