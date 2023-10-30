@@ -1,6 +1,6 @@
 import React from "react";
-// import linkedinIcon from "../../../src/Images/CSS/linkedin.png"
-// import instagramIcon from "../../../src/Images/CSS/ig.png"
+import linkedinIcon from "../../../src/Images/CSS/linkedin.png"
+import instagramIcon from "../../../src/Images/CSS/ig.png"
 
 const Header = () => {
 return (
@@ -40,12 +40,12 @@ return (
         </ul>
     </nav>
     <div className="social-icons">
-        {/* <a href="https://www.linkedin.com/in/joechang022/">
+        <a href="https://www.linkedin.com/in/joechang022/">
           <img src={linkedinIcon} alt="LinkedIn" className="icon"/>
         </a>
         <a href="https://www.instagram.com/joea_chang/">
-          <img src={instagramIcon} alt="Instagram" className="icon"/> */}
-        {/* </a> */}
+          <img src={instagramIcon} alt="Instagram" className="icon"/>
+        </a>
     </div>
     </header>
   );

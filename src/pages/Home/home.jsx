@@ -1,12 +1,14 @@
 import React from "react";
-import Resume from "../src/Images/CSS/JoeChangResume.pdf";
+import Resume from "../src/Images/CSS/GIS_Resume.pdf";
 import ProfilePicture from "../src/Images/CSS/Profile.jpg";
+import '../index.css';
+
 const Home = () => {
     const onButtonClick = () => {
-        // const pdfUrl = "JoeChangResume.pdf";
+        const pdfUrl = "../src/Images/CSS/GIS_Resume.pdf";
         const link = document.createElement("a");
-        link.href = Resume;
-        link.download = "JoeChangResume.pdf";
+        link.href = pdfUrl;
+        link.download = "../src/Images/CSS/GIS_Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
