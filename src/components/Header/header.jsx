@@ -1,6 +1,7 @@
 import React from "react";
 import linkedinIcon from "../../../src/Images/CSS/linkedin.png"
 import instagramIcon from "../../../src/Images/CSS/ig.png"
+import './index.css'
 
 const Header = () => {
 return (
@@ -9,7 +10,7 @@ return (
       <nav>
     <ul className="navbar">
         <li>
-            <a href="home">Home</a>
+            <a href="/">Home</a>
         </li>
         <li>
         <a href="gis">GIS</a>
@@ -32,9 +33,9 @@ return (
         <li>
         <a href="software-engineering">Software Engineering</a>
             <div className="dropdown">
-              <a href="PersonalFinance">Personal Finance Breakdown</a>
-              <a href="NBA">NBA Application</a>
-              <a href="#">Coming Soon</a>
+              <a href="/FinanceApplication">Personal Finance Breakdown</a>
+              <a href="/NBA">NBA Application</a>
+              <a href="/WorkoutApplication">Workout Application</a>
             </div>
         </li>
         </ul>

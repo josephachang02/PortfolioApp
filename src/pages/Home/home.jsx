@@ -1,14 +1,14 @@
 
-import Resume from "../src/Images/CSS/GIS_Resume.pdf";
-import ProfilePicture from "../src/Images/CSS/Profile.jpg";
-import '../index.css';
+import Resume from "../../../src/Images/CSS/GIS_Resume.pdf";
+import ProfilePicture from "../../../src/Images/CSS/Profile.jpg";
+import './index.css';
 
 const Home = () => {
     const onButtonClick = () => {
-        const pdfUrl = "../src/Images/CSS/GIS_Resume.pdf";
+        const pdfUrl = "../../../src/Images/CSS/GIS_Resume.pdf";
         const link = document.createElement("a");
         link.href = pdfUrl;
-        link.download = "../src/Images/CSS/GIS_Resume.pdf";
+        link.download = "JoeResume.pdf"; //name shown in url
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -18,7 +18,7 @@ const Home = () => {
         
         <div id="content-split-container">
         <div id="profilepic">
-            <img src ={ProfilePicture} />
+            <img id="profilePicture" src ={ProfilePicture} />
         </div>
         <div id="aboutMe">
             <h1>About Me</h1>
