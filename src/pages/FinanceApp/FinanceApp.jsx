@@ -11,14 +11,13 @@ const FinanceApp = () => {
     <div>
     <div>Finance App</div>
     <div id ="container">
-    <iframe
+    <iframe 
         src="https://peppy-custard-ae0f17.netlify.app/"
         width="1000"
         height="1000"
         title="FinanceApp"
 
     ></iframe>
-
     </div>
     </div>
   )

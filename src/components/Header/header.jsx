@@ -1,7 +1,10 @@
 import React from "react";
 import linkedinIcon from "../../../src/Images/CSS/linkedin.png"
 import instagramIcon from "../../../src/Images/CSS/ig.png"
+import gitHubIcon from "../../../src/Images/CSS/github.png"
 import './index.css'
+
+
 
 const Header = () => {
 return (
@@ -46,6 +49,9 @@ return (
         </a>
         <a href="https://www.instagram.com/joea_chang/">
           <img src={instagramIcon} alt="Instagram" className="icon"/>
+        </a>
+        <a href="https://github.com/josephachang02">
+          <img src={gitHubIcon} alt="GitHub" className="icon"/>
         </a>
     </div>
     </header>
