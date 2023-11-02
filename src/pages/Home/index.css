@@ -7,3 +7,20 @@
   max-width: 500px;
   max-width: 500px;
 }
+
+#content-split-container {
+  display: flex;
+  justify-content: center; /* Centers the two columns horizontally */
+}
+
+#profilepic {
+  flex: 1; /* Makes the profile picture column take up 1/2 of the available space */
+  padding: 10px; /* Add padding for spacing */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+#aboutContent {
+  flex: 1; /* Makes the about content column take up 1/2 of the available space */
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
