@@ -3,25 +3,26 @@ import linkedinIcon from "../../../src/Images/CSS/linkedin.png"
 import instagramIcon from "../../../src/Images/CSS/ig.png"
 import gitHubIcon from "../../../src/Images/CSS/github.png"
 import './index.css'
-
+import Logo from "../../../src/Images/CSS/Logo.jpg";
 
 
 const Header = () => {
 return (
 <header>
-    <div className="header-title">Joe Chang Portfolio</div>
+    <div className="header-title">
+      <a href="/">
+    <img id="Logo" src ={Logo} />
+      </a>
+    </div>
       <nav>
     <ul className="navbar">
-        <li>
-            <a href="/">Home</a>
-        </li>
         <li>
         <a href="gis">GIS</a>
             <div className="dropdown">
               <a href="Classification">Classification</a>
               <a href="ClientConsultant">Client Consultant</a>
               <a href="DensityRelation">Density Relation</a>
-              <a href="SeniorProject2020">Senior Project 2020</a>
+              <a href="SeniorProject2020">GIS Senior Project</a>
             </div>
         </li>
         <li>
