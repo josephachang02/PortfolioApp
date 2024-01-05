@@ -57,6 +57,27 @@ header {
     border-radius: 2;
   }
 
+  .NavTitle {
+  position: relative;
+  font-size: 30px;
+  transition: font-size 0.2s ease-in-out;
+  }
+  .NavTitle:hover::before {
+    width: 100%;
+    transition: width 0.2s ease-in-out 0.2s;
+  }
+  .NavTitle::before {
+    content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.2s ease-in-out;
+  }
+
+
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;

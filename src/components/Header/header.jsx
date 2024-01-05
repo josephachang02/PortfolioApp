@@ -31,51 +31,22 @@ return (
       <nav>
     <ul className="navbar">
         <li>
-        <Link href="gis" underline="hover" 
-        sx={{
-            fontSize: '30px',
-            transition: 'font-size 0.2s ease-in-out',
-            '&:hover': {
-            fontSize: '34px',
-            },
-          }}
-        >
+        <Link href="gis" className="NavTitle" >
         {'GIS'}
         </Link >
         </li>
         <li>
-        <Link href="urban-planning" size="medium" underline="hover" 
-          sx={{
-            fontSize: '30px',
-            transition: 'font-size 0.2s ease-in-out',
-            '&:hover': {
-            fontSize: '34px',
-            },
-          }}>
+        <Link href="urban-planning" className="NavTitle">
         {'Urban Planning'}
         </Link>
         </li>
         <li>
-        <Link href="software-engineering" underline="hover" 
-          sx={{
-            fontSize: '30px',
-            transition: 'font-size 0.2s ease-in-out',
-            '&:hover': {
-            fontSize: '34px',
-            },
-          }}>
+        <Link href="software-engineering" className="NavTitle" >
         {'Software Engineering'}
         </Link>
         </li>
         <li>
-        <Link href="contact" underline="hover" 
-        sx={{
-            fontSize: '30px',
-            transition: 'font-size 0.2s ease-in-out',
-            '&:hover': {
-            fontSize: '34px',
-            },
-          }}>
+        <Link href="contact" className="NavTitle">
         {'Contact'}
         </Link>
         </li>
