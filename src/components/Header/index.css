@@ -11,14 +11,15 @@ header {
   position: relative;
   width: fit-content;
   height: fit-content;
+  margin: 15px;
 }
-.logo {
-  width: 100px; /* Set the initial width */
+.Logo {
+  width: 200px; /* Set the initial width */
   height: auto;
   transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
 }
   
-  .logo:hover {
+  .Logo:hover {
     transform: scale(1.1); /* Increase the scale on hover (adjust as needed) */
   }
 

@@ -1,6 +1,6 @@
 import React from "react";
 import './index.css'
-import Logo from "../../../src/Images/CSS/Logo.jpg";
+import Logo from "../../../src/Images/CSS/Logo.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
@@ -13,6 +13,14 @@ import Link from '@mui/material/Link';
 
 
 const Header = () => {
+
+  const iconHoverStyles = {
+    filter: 'brightness(95%)', // Adjust the brightness for the darker tint
+  };
+  const GitHubIconStyle = {
+    color: '#444444',
+  };
+
 return (
 <header>
     <div className="logo-container">
@@ -23,10 +31,12 @@ return (
       <nav>
     <ul className="navbar">
         <li>
-        <Link href="gis" underline="hover" sx={{
+        <Link href="gis" underline="hover" 
+        sx={{
             fontSize: '30px',
+            transition: 'font-size 0.2s ease-in-out',
             '&:hover': {
-              fontSize: '33px', // Adjust the size as needed
+            fontSize: '34px',
             },
           }}
         >
@@ -36,10 +46,11 @@ return (
         <li>
         <Link href="urban-planning" size="medium" underline="hover" 
           sx={{
-          fontSize: '30px',
-          '&:hover': {
-          fontSize: '33px', // Adjust the size as needed
-          },
+            fontSize: '30px',
+            transition: 'font-size 0.2s ease-in-out',
+            '&:hover': {
+            fontSize: '34px',
+            },
           }}>
         {'Urban Planning'}
         </Link>
@@ -48,8 +59,9 @@ return (
         <Link href="software-engineering" underline="hover" 
           sx={{
             fontSize: '30px',
+            transition: 'font-size 0.2s ease-in-out',
             '&:hover': {
-            fontSize: '33px', // Adjust the size as needed
+            fontSize: '34px',
             },
           }}>
         {'Software Engineering'}
@@ -59,8 +71,9 @@ return (
         <Link href="contact" underline="hover" 
         sx={{
             fontSize: '30px',
+            transition: 'font-size 0.2s ease-in-out',
             '&:hover': {
-            fontSize: '33px', // Adjust the size as needed
+            fontSize: '34px',
             },
           }}>
         {'Contact'}
@@ -78,15 +91,14 @@ return (
           background: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #FFC837, #4CAF50)',
           WebkitBackgroundClip: 'icon',
           WebkitTextFillColor: '',
-          borderRadius: '35%',
+          borderRadius: '40%',
           display: 'inline-block',
           overflow: 'hidden',
-          color: "white"
-        }}
-      />
+          color: "white",
+          '&:hover': iconHoverStyles,}}/>
         </a>
         <a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer" >
-          <GitHubIcon sx={{ fontSize: '3em', color: 'black'}}/>
+          <GitHubIcon sx={{ fontSize: '3em', color: 'black', '&:hover': GitHubIconStyle}}/>
         </a>
     </div>
     </header>
