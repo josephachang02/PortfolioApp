@@ -1,58 +1,92 @@
 import React from "react";
-import linkedinIcon from "../../../src/Images/CSS/linkedin.png"
-import instagramIcon from "../../../src/Images/CSS/ig.png"
-import gitHubIcon from "../../../src/Images/CSS/github.png"
 import './index.css'
 import Logo from "../../../src/Images/CSS/Logo.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+// import ActiveLastBreadcrumb from "../Breadcrumbs/breadcrumbs.jsx";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import Link from '@mui/material/Link';
+
 
 
 const Header = () => {
 return (
 <header>
-    <div className="header-title">
+    <div className="logo-container">
       <a href="/">
-    <img id="Logo" src ={Logo} />
+    <img id="Logo" src ={Logo} alt="Logo" className="Logo"/>
       </a>
     </div>
       <nav>
     <ul className="navbar">
         <li>
-        <a href="gis">GIS</a>
-            <div className="dropdown">
-              <a href="Classification">Classification</a>
-              <a href="ClientConsultant">Client Consultant</a>
-              <a href="DensityRelation">Density Relation</a>
-              <a href="SeniorProject2020">GIS Senior Project</a>
-            </div>
+        <Link href="gis" underline="hover" sx={{
+            fontSize: '30px',
+            '&:hover': {
+              fontSize: '33px', // Adjust the size as needed
+            },
+          }}
+        >
+        {'GIS'}
+        </Link >
         </li>
         <li>
-        <a href="urban-planning">Urban Planning</a>
-            <div className="dropdown">
-              <a href="FerndaleWA">Ferndale, WA Comprehensive Plan</a>
-              <a href="HazardsMitigationPlan">Hazards Mitigation Plan</a>
-              <a href="HousingActionPlan">Housing Action Plan 2019</a>
-              <a href="MonroeWA">Monroe, WA Community Outreach</a>
-            </div>
+        <Link href="urban-planning" size="medium" underline="hover" 
+          sx={{
+          fontSize: '30px',
+          '&:hover': {
+          fontSize: '33px', // Adjust the size as needed
+          },
+          }}>
+        {'Urban Planning'}
+        </Link>
         </li>
         <li>
-        <a href="software-engineering">Software Engineering</a>
-            <div className="dropdown">
-              <a href="/FinanceApplication">Personal Finance Breakdown</a>
-              <a href="/NBA">NBA Application</a>
-              <a href="/WorkoutApplication">Workout Application</a>
-            </div>
+        <Link href="software-engineering" underline="hover" 
+          sx={{
+            fontSize: '30px',
+            '&:hover': {
+            fontSize: '33px', // Adjust the size as needed
+            },
+          }}>
+        {'Software Engineering'}
+        </Link>
+        </li>
+        <li>
+        <Link href="contact" underline="hover" 
+        sx={{
+            fontSize: '30px',
+            '&:hover': {
+            fontSize: '33px', // Adjust the size as needed
+            },
+          }}>
+        {'Contact'}
+        </Link>
         </li>
         </ul>
     </nav>
     <div className="social-icons">
-        <a href="https://www.linkedin.com/in/joechang022/">
-          <img src={linkedinIcon} alt="LinkedIn" className="icon"/>
+        <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer">
+          <LinkedInIcon sx={{ fontSize: '3em' }}/>
         </a>
-        <a href="https://www.instagram.com/joea_chang/">
-          <img src={instagramIcon} alt="Instagram" className="icon"/>
+        <a href="https://www.instagram.com/joea_chang/" target ="_blank" rel="noopener noreferrer" >
+          <InstagramIcon sx={{
+          fontSize: '3em',
+          background: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #FFC837, #4CAF50)',
+          WebkitBackgroundClip: 'icon',
+          WebkitTextFillColor: '',
+          borderRadius: '35%',
+          display: 'inline-block',
+          overflow: 'hidden',
+          color: "white"
+        }}
+      />
         </a>
-        <a href="https://github.com/josephachang02">
-          <img src={gitHubIcon} alt="GitHub" className="icon"/>
+        <a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer" >
+          <GitHubIcon sx={{ fontSize: '3em', color: 'black'}}/>
         </a>
     </div>
     </header>

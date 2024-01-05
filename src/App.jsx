@@ -6,6 +6,8 @@ import FinanceApp from './pages/FinanceApp/FinanceApp'
 import NBAApplication from './pages/NBAApp/NBAApp'
 import WorkoutApplication from './pages/WorkoutApp/WorkoutApp'
 import { Routes, Route } from 'react-router-dom'
+// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+
 
 function App() {
 
