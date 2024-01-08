@@ -46,13 +46,23 @@ return (
         </Link>
         </li>
         <li>
+        <Link href="experience" className="NavTitle">
+        {'Experience'}
+        </Link>
+        </li>
+        <li>
+        <Link href="projects" className="NavTitle">
+        {'Projects'}
+        </Link>
+        </li>
+        <li>
         <Link href="contact" className="NavTitle">
-        {'Contact'}
+        {'Contact Me'}
         </Link>
         </li>
         </ul>
     </nav>
-    <div className="social-icons">
+    {/* <div className="social-icons">
         <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer">
           <LinkedInIcon sx={{ fontSize: '3em' }}/>
         </a>
@@ -71,7 +81,7 @@ return (
         <a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer" >
           <GitHubIcon sx={{ fontSize: '3em', color: 'black', '&:hover': GitHubIconStyle}}/>
         </a>
-    </div>
+    </div> */}
     </header>
   );
 };

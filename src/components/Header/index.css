@@ -4,14 +4,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    padding-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 20px;
 }
 .logo-container {
   position: relative;
   width: fit-content;
   height: fit-content;
   margin: 15px;
+  flex-shrink: 0;
 }
 .Logo {
   width: 200px; /* Set the initial width */
@@ -28,12 +29,16 @@ header {
     list-style-type: none;
     padding: 0;
     display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
   }
   
   .navbar li {
     margin: 0 10px;
     position: relative;
     display: inline-block;
+    margin: 0 15px;
   }
   .navbar li:hover .dropdown {
     display: block;
@@ -60,8 +65,10 @@ header {
   .NavTitle {
   position: relative;
   font-size: 30px;
+  text-decoration: none;
   transition: font-size 0.2s ease-in-out;
   }
+
   .NavTitle:hover::before {
     width: 100%;
     transition: width 0.2s ease-in-out 0.2s;
@@ -78,21 +85,48 @@ header {
   }
 
 
-  @media (max-width: 768px) {
-    .navbar {
+  @media (max-width: 628px) {
+    header {
       flex-direction: column;
+      align-items: center;
     }
-      .navbar li {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-    
-      .dropdown {
-        position: static;
-        display: none;
-      }
-    
-      .navbar li:hover .dropdown {
-        display: block;
-      }
+  
+    .logo-container {
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: center;
     }
+  
+    .navbar {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .NavTitle {
+      text-decoration: none;
+      margin: 10px;
+      flex: 1;
+      flex-direction: row;
+    }
+  
+    .NavTitle:hover::before {
+      width: 100%;
+      transition: width 0.2s ease-in-out 0.2s;
+    }
+  
+    .NavTitle::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: currentColor;
+      transition: width 0.2s ease-in-out;
+    }}
+
+      
