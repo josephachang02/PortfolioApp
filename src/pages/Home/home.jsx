@@ -47,7 +47,7 @@ const Home = () => {
         <div id="aboutContent">
         <h2>Hi all, I'm Joe</h2>
             <p>
-                A passionate Full Stack Software Developer integrating Data/GIS analysis with programming applications. 
+                A passionate Full Stack Software Developer integrating Data/GIS analysis with programming applications. Eager to expand my horizon in the field of software engineering as part of developing an integrative understanding for GIS and coding. 
             </p>
         <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer">
           <LinkedInIcon sx={{ fontSize: '3em' }}/>
@@ -68,7 +68,16 @@ const Home = () => {
           <GitHubIcon sx={{ fontSize: '3em', color: 'black', '&:hover': GitHubIconStyle}}/>
         </a>
     </div>
+    </div>
+    <br></br>
+    <div id="contAbout">
+    <h2>My Background</h2>
+<p>With a solid foundation built during my 3 years as a GIS Analyst at Google, I took a bold step into the dynamic world of software engineering. In August 2023, driven by a passion for coding and a desire to deepen my impact in GIS, I chose to embrace the challenges and opportunities of this new journey. Little did I know, the realm of software engineering held a vast array of languages and knowledge, fueling my curiosity to explore further.</p>
+
+<p>Since leaving my full-time role, I've been working part-time at the First Starbucks in Pike Place Market, maintaining a positive and energetic environment. Simultaneously, I've been wholeheartedly pursuing my passions in GIS and software engineering. This positive journey has not only enriched my skills but has also opened doors to exciting possibilities that continue to fuel my drive and determination.</p>
+
         </div>
+        
 
 
 

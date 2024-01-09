@@ -10,7 +10,7 @@ const Projects = () => {
         <p>Finance Web-Page</p>
         <a href="https://github.com/your-username/your-repository" target="_blank" rel="noopener noreferrer">GitHub Link</a>
         <button><a href="https://your-live-page-url.com" target="_blank" rel="noopener noreferrer">Link to Live Page</a></button>
-        <p>Javascript functions to perform financial calculations based on the user's input</p>
+        <p>Javascript functions to perform financial calculations based on the User's input</p>
         <img src="default.jpg" alt="HTML" />
         <img src="default.jpg" alt="CSS" />
         <img src="default.jpg" alt="Javascript" />
