@@ -45,12 +45,12 @@ return (
         </Link>
         </li>
         <li>
-        <Link href="experience" className="NavTitle">
+        <Link href="/Experience" className="NavTitle">
         {'Experience'}
         </Link>
         </li>
         <li>
-        <Link href="projects" className="NavTitle">
+        <Link href="/Projects" className="NavTitle">
         {'Projects'}
         </Link>
         </li>

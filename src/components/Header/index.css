@@ -18,7 +18,7 @@ header {
 .Logo {
   width: 200px; /* Set the initial width */
   height: auto;
-  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
 }
   
 .Logo:hover {
@@ -51,20 +51,20 @@ header {
   font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
-.social-icons a {
+/* .social-icons a {
   margin-left: 10px;
-}
+} */
   
-.icon {
+/* .icon {
   width:50px;
   height:50px;
   background-color: #f2f2f2;
   border-radius: 2;
-}
+} */
 
 .NavTitle {
   position: relative;
-  font-size: 30px;
+  font-size: 50px;
   text-decoration: none;
   transition: font-size 0.2s ease-in-out;
 }

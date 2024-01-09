@@ -12,14 +12,17 @@
   align-items: center;
 }
 
+#profilePicture.fade-in:hover {
+  transform: scale(1.05);
+}
+
 #profilePic {
   flex: 1;
   padding: 25px;
   max-width: 20%;
   margin-left: 10px;
   align-content: center;
-  transform: translateY(20px);
-  transition: opacity 2s ease-in-out, transform 0.5s ease-in-out;
+  
 }
 #profilePicture.fade-in {
   opacity: 1;
@@ -35,7 +38,7 @@
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+  transition: opacity 1s ease-in-out, transform 1.2s ease-in-out;
 }
 #aboutContent.fade-in {
   opacity: 1;

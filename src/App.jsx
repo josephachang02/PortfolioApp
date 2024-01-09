@@ -7,6 +7,7 @@ import NBAApplication from './pages/NBAApp/NBAApp'
 import WorkoutApplication from './pages/WorkoutApp/WorkoutApp'
 import Experience from './pages/Experience/experience'
 import { Routes, Route } from 'react-router-dom'
+import Projects from './pages/Projects/projects'
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 
@@ -18,8 +19,8 @@ function App() {
     <Routes>
         <Route path ="/" element={<Home />} />
 
-        <Route path ="/experience" element={<Experience />} />
-        <Route path ="/FinanceApplication" element={<FinanceApp />} />
+        <Route path ="/Experience" element={<Experience />} />
+        <Route path ="/Projects" element={<Projects />} />
         <Route path ="/NBA" element={<NBAApplication />} />
         <Route path ="/WorkoutApplication" element={<WorkoutApplication />} />
     </Routes>
