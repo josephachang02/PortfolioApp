@@ -1,27 +1,60 @@
-#profilepic {
-  max-width: 500px;
-  max-width: 500px;
-}
-
 #profilePicture {
-  max-width: 500px;
-  max-width: 500px;
+  max-width: 300px;
+  margin-left: 15px;
+  transform: translateY(25px);
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
 #content-split-container {
   display: flex;
-  justify-content: center; /* Centers the two columns horizontally */
+  justify-content: center;
+  align-items: center;
 }
 
-#profilepic {
-  flex: 1; /* Makes the profile picture column take up 1/2 of the available space */
-  padding: 10px; /* Add padding for spacing */
-  box-sizing: border-box; /* Includes padding in the width calculation */
+#profilePic {
+  flex: 1;
+  padding: 25px;
+  max-width: 20%;
+  margin-left: 10px;
+  align-content: center;
+  transform: translateY(20px);
+  transition: opacity 2s ease-in-out, transform 0.5s ease-in-out;
+}
+#profilePicture.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #aboutContent {
-  flex: 1; /* Makes the about content column take up 1/2 of the available space */
+  flex: 1;
   padding: 10px;
   margin: 10px;
+  align-items: center;
+  text-align: center;
   box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+}
+#aboutContent.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 628px) {
+  #content-split-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #profilePicture {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
+  }
+
+  #profilePicture:hover {
+    transform: none; /* Reset the scale on hover for smaller screens */
+  }
 }

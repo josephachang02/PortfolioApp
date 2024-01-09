@@ -2,6 +2,13 @@
 import Resume from "../../../src/Images/CSS/GIS_Resume.pdf";
 import ProfilePicture from "../../../src/Images/CSS/Profile.jpg";
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import Link from '@mui/material/Link';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import React, { useEffect } from 'react';
 
 const Home = () => {
     const onButtonClick = () => {
@@ -13,32 +20,61 @@ const Home = () => {
         link.click();
         document.body.removeChild(link);
     };
+    useEffect(() => {
+        
+        
+        const profilePicture = document.getElementById('profilePicture');
+    profilePicture.classList.add('fade-in');
+
+        const aboutContent = document.getElementById('aboutContent');
+        aboutContent.classList.add('fade-in');
+      }, []);
+
+    const iconHoverStyles = {
+        filter: 'brightness(95%)', // Adjust the brightness for the darker tint
+      };
+      const GitHubIconStyle = {
+        color: '#444444',
+      };
     return (
         <>
         
         <div id="content-split-container">
-        <div id="profilepic">
-            <img id="profilePicture" src ={ProfilePicture} />
+        <div id="profilePic">
+            <img id="profilePicture" src ={ProfilePicture} alt= "Profile" />
         </div>
             
         <div id="aboutContent">
-        <h1>About Me</h1>
-            <p>Hello everyone, my name is Joe and I would like to welcome to my personal portfolio website that I created through React. A little bit about me, I currently living in Lynnwood, WA. I received my Bachelor's degree in Urban Planning from Western Washington University and a GIS certificate from the University of Washington. I began my professional career as a GIS Specialist at Google, quickly taking on roles in data quality control and workflow management. I eventually led specialized projects, such as Low Emission Zones, U.S. Trucking Routes, Biking Lanes, and Plus Codes Roads. However, I realized I needed to expand my skills to advance further, I enrolled myself into a full-stack development bootcamp and this has propelled the start of my career transition into a software engineer. My next goals is to develop a fundamental understanding of Python, which will propel my career in both GIS and Software Engineering. </p>
+        <h2>Hi all, I'm Joe</h2>
+            <p>
+                A passionate Full Stack Software Developer integrating Data/GIS analysis with programming applications. 
+            </p>
+        <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer">
+          <LinkedInIcon sx={{ fontSize: '3em' }}/>
+        </a>
+        <a href="https://www.instagram.com/joea_chang/" target ="_blank" rel="noopener noreferrer" >
+          <InstagramIcon sx={{
+          fontSize: '3em',
+          background: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #FFC837, #4CAF50)',
+          WebkitBackgroundClip: 'icon',
+          WebkitTextFillColor: '',
+          borderRadius: '40%',
+          display: 'inline-block',
+          overflow: 'hidden',
+          color: "white",
+          '&:hover': iconHoverStyles,}}/>
+        </a>
+        <a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer" >
+          <GitHubIcon sx={{ fontSize: '3em', color: 'black', '&:hover': GitHubIconStyle}}/>
+        </a>
+    </div>
         </div>
-        </div>
 
 
 
 
 
-            <center>
-                <h3>
-                    Click below to download my resume PDF
-                </h3>
-                <button onClick={onButtonClick}>
-                    Download PDF
-                </button>
-            </center>
+            
         </>
     );
 };

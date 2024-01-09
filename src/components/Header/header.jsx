@@ -1,8 +1,7 @@
 import React from "react";
 import './index.css'
 import Logo from "../../../src/Images/CSS/Logo.png";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 // import ActiveLastBreadcrumb from "../Breadcrumbs/breadcrumbs.jsx";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -62,26 +61,6 @@ return (
         </li>
         </ul>
     </nav>
-    {/* <div className="social-icons">
-        <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer">
-          <LinkedInIcon sx={{ fontSize: '3em' }}/>
-        </a>
-        <a href="https://www.instagram.com/joea_chang/" target ="_blank" rel="noopener noreferrer" >
-          <InstagramIcon sx={{
-          fontSize: '3em',
-          background: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #FD1D1D, #F56040, #FFC837, #4CAF50)',
-          WebkitBackgroundClip: 'icon',
-          WebkitTextFillColor: '',
-          borderRadius: '40%',
-          display: 'inline-block',
-          overflow: 'hidden',
-          color: "white",
-          '&:hover': iconHoverStyles,}}/>
-        </a>
-        <a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer" >
-          <GitHubIcon sx={{ fontSize: '3em', color: 'black', '&:hover': GitHubIconStyle}}/>
-        </a>
-    </div> */}
     </header>
   );
 };
