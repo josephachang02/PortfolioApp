@@ -48,7 +48,7 @@ const Home = () => {
         <div id="aboutContent">
         <h2>Hi all, I'm Joe</h2>
             <p>
-                A passionate Full Stack Software Developer integrating Data/GIS analysis with programming applications. Eager to expand my horizon in the field of software engineering as part of developing an integrative understanding for GIS and coding. 
+                A passionate GIS Analyst integrating Software Engineering with programming applications. Eager to expand my horizon in GIS through story-telling using maps and data to illustrate the intricacies of our world as we know it.
             </p>
         <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer">
           <LinkedInIcon sx={{ fontSize: '3em' }}/>

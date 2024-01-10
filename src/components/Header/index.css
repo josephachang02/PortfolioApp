@@ -6,7 +6,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .logo-container {
   position: relative;
@@ -33,6 +33,7 @@ header {
   list-style: none;
   justify-content: space-around;
   margin: 0;
+  margin-right: 20px;
 }
   
 .navbar li {
@@ -50,17 +51,6 @@ header {
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
   }
-  
-/* .social-icons a {
-  margin-left: 10px;
-} */
-  
-/* .icon {
-  width:50px;
-  height:50px;
-  background-color: #f2f2f2;
-  border-radius: 2;
-} */
 
 .NavTitle {
   position: relative;

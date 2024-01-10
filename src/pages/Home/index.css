@@ -45,6 +45,17 @@
   transform: translateY(0);
 }
 
+#contAbout h2 {
+  text-align: center;
+}
+
+#contAbout p {
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+}
+
 @media (max-width: 628px) {
   #content-split-container {
     flex-direction: column;

@@ -1,76 +1,208 @@
 // import React from 'react'
+import Card from 'react-bootstrap/Card';
+import ProfilePicture from "../../../src/Images/CSS/Profile.jpg";
 
-const experience = () => {
+const Experience = () => {
+
   return (
     <div>
-<div id = "education">
-    <h1>Education</h1>
+      
+{/* Certificates */}
+<h2>Experience</h2>
+<div className="container" style={{ padding: "15px" }}>
+        <div className="row">
+          <div className="col-md-4">
+            <div className="card" style={{ width: "15rem" }}>
+              <img className="card-img-top" src={ProfilePicture} alt="Card image cap" />
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div className="card-body">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+          </div>
 
-    <div id = "educationCard">
-        <p>Per Scholas</p>
-        <p>Full-Stack Development</p>
-        <p>August 2023 - November 2023</p>
-        <ul>
-            <li>Description</li>
-        </ul>
-    </div>
-    
-    <div id = "educationCard">
-        <p>Western Washington University</p>
-        <p>Bachelors of Science in Urban Planning</p>
-        <p>September 2015 - March 2020</p>
-        <ul>
-            <li>Description</li>
-        </ul>
-    </div>
-</div>
-
-<div id = "certificates">
-    <h1>Certificates</h1>
-
-    <div id = "certificateCard">
-    <p>University of Illinois</p>
-        <p>CyberGIS</p>
-        <p>July 2023 - December 2023</p>
-        <ul>
-            <li>Description</li>
-            <li><a href = "https://coursera.org/share/f78992d6170e32445f55f0baac360197">View Certificate</a></li> 
-            {/* link above needs to be changed to a physical copy to view */}
-        </ul>
+          {/* Second Card */}
+          <div className="col-md-4">
+            <div className="card" style={{ width: "15rem" }}>
+              <img className="card-img-top" src={ProfilePicture} alt="Card image cap" />
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div className="card-body">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-    <div id = "certificateCard">
-        <p>Per Scholas</p>
-        <p>Full-Stack Development</p>
-        <p>August 2023 - November 2023</p>
-        <ul>
-        <li>Description</li>
-    </ul>
+      <div className="container" style={{ margin: "10px" }}>
+        <div className="row">
+          {/* First Card */}
+          <div className="col-md-4">
+            <div className="card" style={{ width: "15rem" }}>
+              <img className="card-img-top" src={ProfilePicture} alt="Card image cap" />
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div className="card-body">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Card */}
+          <div className="col-md-4">
+            <div className="card" style={{ width: "15rem" }}>
+              <img className="card-img-top" src={ProfilePicture} alt="Card image cap" />
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div className="card-body">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Third Card */}
+          <div className="col-md-4">
+            <div className="card" style={{ width: "15rem" }}>
+              <img className="card-img-top" src={ProfilePicture} alt="Card image cap" />
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div className="card-body">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      {/* Certificates */}
+      <div className="container" style={{ padding: "15px" }}>
+        <div className="row">
+          <div className="col-md-4">
+            <div className="card" style={{ width: "15rem" }}>
+              <img className="card-img-top" src={ProfilePicture} alt="Card image cap" />
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div className="card-body">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Second Card */}
+          <div className="col-md-4">
+            <div className="card" style={{ width: "15rem" }}>
+              <img className="card-img-top" src={ProfilePicture} alt="Card image cap" />
+              <div className="card-body">
+                <h5 className="card-title">Education</h5>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                </p>
+              </div>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+              <div className="card-body">
+                <a href="#" className="card-link">
+                  Card link
+                </a>
+                <a href="#" className="card-link">
+                  Another link
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  );
+};
 
-    <div id = "certificateCard">
-        <p>University of Washington</p>
-        <p>Geographic Information Systems</p>
-        <p>September 2020 - June 2021</p>
-        <ul>
-            <li>Description</li>
-        </ul>
-    </div>
-</div>
-
-    <div id = "experience">
-        <h1>Experience</h1>
-    <div id = "experienceCard">
-    <p>Google</p>
-        <p>GIS Analyst/Project Lead</p>
-        <p>November 2020 - August 2023</p>
-        <ul>
-            <li>Description</li>
-        </ul>
-    </div>
-</div>
-</div>
-  )
-}
-
-export default experience
+export default Experience;
