@@ -54,7 +54,15 @@
   #profilePicture {
     display: flex;
     max-width: 200px;
+    height:auto;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+  #profilePic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #profilePicture:hover {

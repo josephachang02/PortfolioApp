@@ -9,6 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import React, { useEffect } from 'react';
+import HomeCarousel from "../../components/Carousel/carousel";
 
 const Home = () => {
     const onButtonClick = () => {
@@ -74,13 +75,13 @@ const Home = () => {
     <h2>My Background</h2>
 <p>With a solid foundation built during my 3 years as a GIS Analyst at Google, I took a bold step into the dynamic world of software engineering. In August 2023, driven by a passion for coding and a desire to deepen my impact in GIS, I chose to embrace the challenges and opportunities of this new journey. Little did I know, the realm of software engineering held a vast array of languages and knowledge, fueling my curiosity to explore further.</p>
 
-<p>Since leaving my full-time role, I've been working part-time at the First Starbucks in Pike Place Market, maintaining a positive and energetic environment. Simultaneously, I've been wholeheartedly pursuing my passions in GIS and software engineering. This positive journey has not only enriched my skills but has also opened doors to exciting possibilities that continue to fuel my drive and determination.</p>
+<p>Since leaving my full-time role, I've been working part-time at the First Starbucks in Pike Place Market. Simultaneously, I've been wholeheartedly pursuing my passions in GIS and software engineering. This positive journey has not only enriched my skills but has also opened doors to exciting possibilities that continue to fuel my drive and determination.</p>
 
         </div>
         
 
 
-
+<HomeCarousel />
 
 
             
