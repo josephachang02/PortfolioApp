@@ -9,7 +9,7 @@ import Experience from './pages/Experience/experience'
 import { Routes, Route } from 'react-router-dom'
 import Projects from './pages/Projects/projects'
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-
+import GIS from './pages/GIS/gis'
 
 function App() {
 
@@ -20,6 +20,7 @@ function App() {
         <Route path ="/" element={<Home />} />
 
         <Route path ="/Experience" element={<Experience />} />
+        <Route path ="/GIS" element={<GIS />} />
         <Route path ="/Projects" element={<Projects />} />
         <Route path ="/NBA" element={<NBAApplication />} />
         <Route path ="/WorkoutApplication" element={<WorkoutApplication />} />

@@ -1,68 +1,106 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './index.css'
 import Logo from "../../../src/Images/CSS/Logo.png";
-
-// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-// import ActiveLastBreadcrumb from "../Breadcrumbs/breadcrumbs.jsx";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import Link from '@mui/material/Link';
 
 
-
 const Header = () => {
+  const [shrink, setShrink] = useState(false);
 
-  const iconHoverStyles = {
-    filter: 'brightness(95%)', // Adjust the brightness for the darker tint
-  };
-  const GitHubIconStyle = {
-    color: '#444444',
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setShrink(true);
+      } else {
+        setShrink(false);
+      }
+    };
 
-return (
-<header>
-    <div className="logo-container">
-      <a href="/">
-    <img id="Logo" src ={Logo} alt="Logo" className="Logo"/>
-      </a>
-    </div>
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+  return (
+    <header className={shrink ? 'shrink' : ''}>
+      <div className="logo-container">
+        <a href="/">
+          <img id="Logo" src={Logo} alt="Logo" className="Logo" />
+        </a>
+      </div>
       <nav>
-    <ul className="navbar">
-        <li>
-        <Link href="gis" className="NavTitle" >
-        {'GIS'}
-        </Link >
-        </li>
-        <li>
-        <Link href="urban-planning" className="NavTitle">
-        {'Urban Planning'}
-        </Link>
-        </li>
-        <li>
-        <Link href="software-engineering" className="NavTitle" >
-        {'Software Engineering'}
-        </Link>
-        </li>
-        <li>
-        <Link href="/Experience" className="NavTitle">
-        {'Experience'}
-        </Link>
-        </li>
-        <li>
-        <Link href="/Projects" className="NavTitle">
-        {'Projects'}
-        </Link>
-        </li>
-        <li>
-        <Link href="contact" className="NavTitle">
-        {'Contact Me'}
-        </Link>
-        </li>
-        </ul>
-    </nav>
+        {shrink ? (
+          <ul className="small-navbar" style = {{position:"fixed" }}>
+            {/* Small Navbar Links */}
+            <li>
+              <Link href="GIS" className="SmallNavTitle">
+                {'GIS'}
+              </Link>
+            </li>
+            <li>
+              <Link href="urban-planning" className="SmallNavTitle">
+                {'Urban Planning'}
+              </Link>
+            </li>
+            <li>
+              <Link href="software-engineering" className="SmallNavTitle">
+                {'Software Engineering'}
+              </Link>
+            </li>
+            <li>
+              <Link href="/Experience" className="SmallNavTitle">
+                {'Experience'}
+              </Link>
+            </li>
+            <li>
+              <Link href="/Projects" className="SmallNavTitle">
+                {'Projects'}
+              </Link>
+            </li>
+            <li>
+              <Link href="contact" className="SmallNavTitle">
+                {'Contact Me'}
+              </Link>
+            </li>
+          </ul>
+        ) : (
+          <ul className="navbar">
+            <li>
+              <Link href="GIS" className="NavTitle">
+                {'GIS'}
+              </Link>
+            </li>
+            <li>
+              <Link href="urban-planning" className="NavTitle">
+                {'Urban Planning'}
+              </Link>
+            </li>
+            <li>
+              <Link href="software-engineering" className="NavTitle">
+                {'Software Engineering'}
+              </Link>
+            </li>
+            <li>
+              <Link href="/Experience" className="NavTitle">
+                {'Experience'}
+              </Link>
+            </li>
+            <li>
+              <Link href="/Projects" className="NavTitle">
+                {'Projects'}
+              </Link>
+            </li>
+            <li>
+              <Link href="contact" className="NavTitle">
+                {'Contact Me'}
+              </Link>
+            </li>
+          </ul>
+        )}
+      </nav>
     </header>
-  );
-};
+  )};
 
 export default Header;
