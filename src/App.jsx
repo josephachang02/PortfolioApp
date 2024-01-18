@@ -5,7 +5,7 @@ import Home from './pages/Home/home'
 import FinanceApp from './pages/FinanceApp/FinanceApp'
 import NBAApplication from './pages/NBAApp/NBAApp'
 import WorkoutApplication from './pages/WorkoutApp/WorkoutApp'
-import Experience from './pages/Experience/experience'
+import Experience from './pages/Experience/experience.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Projects from './pages/Projects/projects'
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
