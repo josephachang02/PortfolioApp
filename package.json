@@ -22,7 +22,6 @@
     "react-bootstrap": "^2.9.2",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
-    "react-router": "^6.17.0",
     "react-router-dom": "^6.17.0"
   },
   "devDependencies": {
