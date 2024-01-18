@@ -1,6 +1,3 @@
-// import React from 'react'
-import Card from 'react-bootstrap/Card';
-import ProfilePicture from "../../../src/Images/CSS/Profile.jpg";
 import GoogleMaps from "../../../src/Images/CSS/GoogleMaps.png";
 import Forterra from "../../../src/Images/CSS/Forterra.png";
 import PerScholas from "../../../src/Images/CSS/PerScholas.png";
@@ -25,7 +22,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">GIS Analyst/Project Team Lead</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the content
                 </p>
               </div>
               <ul className="list-group list-group-flush">
@@ -51,7 +48,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Forterra</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the content
                 </p>
               </div>
               <ul className="list-group list-group-flush">
@@ -82,7 +79,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Geographic Information Systems</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the content
                 </p>
               </div>
               <ul className="list-group list-group-flush">
@@ -108,7 +105,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Urban Planning</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build
                 </p>
               </div>
               <ul className="list-group list-group-flush">
@@ -142,7 +139,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Full-Stack Development</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the content
                 </p>
               </div>
               <ul className="list-group list-group-flush">
@@ -168,7 +165,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">CyberGIS</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the content
                 </p>
               </div>
               <ul className="list-group list-group-flush">
@@ -194,7 +191,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Python for Everybody</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the card's content.
+                  Some quick example text to build on the card title and make up the bulk of the content
                 </p>
               </div>
               <ul className="list-group list-group-flush">

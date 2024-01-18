@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import './index.css'
 import Logo from "../../../src/Images/CSS/Logo.png";
 import Link from '@mui/material/Link';
