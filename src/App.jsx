@@ -14,18 +14,18 @@ import GIS from './pages/GIS/gis'
 function App() {
 
   return (
-    <>
+    <div>
     <Header />
-    <Routes basepath = "/">
-
-        <Route path ="/Experience" element={<Experience />} />
-        <Route path ="/GIS" element={<GIS />} />
-        <Route path ="/Projects" element={<Projects />} />
-        <Route path ="/NBA" element={<NBAApplication />} />
-        <Route path ="/WorkoutApplication" element={<WorkoutApplication />} />
+    <Routes>
+        <Route exact path ="/" element={<Home />} />
+        <Route exact path ="/Experience" element={<Experience />} />
+        <Route exact path ="/GIS" element={<GIS />} />
+        <Route exact path ="/Projects" element={<Projects />} />
+        <Route exact path ="/NBA" element={<NBAApplication />} />
+        <Route exact path ="/WorkoutApplication" element={<WorkoutApplication />} />
     </Routes>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
