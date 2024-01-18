@@ -4,7 +4,7 @@ import PerScholas from "../../../src/Images/CSS/PerScholas.png";
 import UniversityIllinois from "../../../src/Images/CSS/UIllinois_logo.png";
 import UW from "../../../src/Images/CSS/UW_Logo.png";
 import WWU from "../../../src/Images/CSS/WWU_Logo.png";
-import UM from "../../../src/Images/CSS/UM_Logo.png";
+import UM from "../../../src/Images/CSS/UM_logo.png";
 
 
 const Experience = () => {
