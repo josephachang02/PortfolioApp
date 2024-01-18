@@ -16,8 +16,8 @@ function App() {
   return (
     <>
     <Header />
-    <Routes>
-        <Route path ="/" element={<Home />} />
+    <Routes basepath = "/">
+
         <Route path ="/Experience" element={<Experience />} />
         <Route path ="/GIS" element={<GIS />} />
         <Route path ="/Projects" element={<Projects />} />
