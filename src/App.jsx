@@ -18,7 +18,6 @@ function App() {
     <Header />
     <Routes>
         <Route path ="/" element={<Home />} />
-
         <Route path ="/Experience" element={<Experience />} />
         <Route path ="/GIS" element={<GIS />} />
         <Route path ="/Projects" element={<Projects />} />
