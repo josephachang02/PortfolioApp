@@ -1,8 +1,15 @@
 import './index.css'
+import ReactMap from '../../components/ReactMap/reactmap'
+import TabularMap from '../../components/ReactMap/tabs'
 
 const gis = () => {
   return (
-    <div>gis</div>
+    <div>
+      <h1>
+       See where my Projects have taken me around the World 
+      </h1>
+      <TabularMap />
+    </div>
   )
 }
 

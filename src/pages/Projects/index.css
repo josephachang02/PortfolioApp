@@ -1,0 +1,26 @@
+.icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    font-size: 30px;
+  }
+  
+  .icon-button:hover {
+    transform: scale(1.2); /* Enlarge on hover */
+    filter: brightness(85%);
+  }
+  
+  .css3-button {
+    /* CSS3 icon specific styles */
+    color: #2965f1;
+  }
+  
+  .javascript-button {
+    /* JavaScript icon specific styles */
+    color: #f7df1e;
+  }
+
+  .html-button {
+    color: #f06529;
+  }
