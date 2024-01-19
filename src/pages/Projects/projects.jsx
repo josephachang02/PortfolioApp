@@ -1,7 +1,7 @@
 import React from 'react';
 import "./index.css";
 import IconButton from '../../components/Icon/IconButton';
-import { IoLogoJavascript, IoLogoCss3,   } from "react-icons/io";
+import { IoLogoJavascript, IoLogoCss3} from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa"
 
 

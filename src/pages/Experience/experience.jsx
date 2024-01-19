@@ -18,7 +18,7 @@ const Experience = () => {
         <div className="row justify-content-around">
           <div className="col-md-4">
             <div className="card" style={{ width: "100%" }}>
-              <img className="card-img-top" src={GoogleMaps} alt="Card image cap" style ={{ objectFit: "contain", width: "100%",height: "250px", margin: "10px" }} />
+              <img className="card-img-top card-img-custom" src={GoogleMaps} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">GIS Analyst/Project Team Lead</h5>
                 <p className="card-text">
@@ -44,7 +44,7 @@ const Experience = () => {
           {/* Second Card */}
           <div className="col-md-4 mb-4">
             <div className="card" style={{ width: "100%" }}>
-              <img className="card-img-top" src={Forterra} alt="Card image cap" style ={{ objectFit: "contain", width: "100%", height: "250px"}}/>
+              <img className="card-img-top card-img-custom" src={Forterra} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Forterra</h5>
                 <p className="card-text">
@@ -75,7 +75,7 @@ const Experience = () => {
           {/* First Card */}
           <div className="col-md-4">
           <div className="card" style={{ width: "100%" }}>
-              <img className="card-img-top" src={UW} alt="Card image cap" style ={{ objectFit: "contain", width: "100%",height: "250px" }} />
+              <img className="card-img-top card-img-custom" src={UW} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Geographic Information Systems</h5>
                 <p className="card-text">
@@ -101,7 +101,7 @@ const Experience = () => {
           {/* Second Card */}
           <div className="col-md-4 mb-4">
             <div className="card" style={{ width: "100%" }}>
-              <img className="card-img-top" src={WWU} alt="Card image cap" style ={{ objectFit: "fill", width: "100%", height: "250px"}}/>
+              <img className="card-img-top card-img-custom" src={WWU} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Urban Planning</h5>
                 <p className="card-text">
@@ -124,22 +124,17 @@ const Experience = () => {
             </div>
           </div>
 
-        
-           
-          
-
-
 <h2 style ={{textAlign: "center" }}>Certificates</h2>
       <div className="container" style={{ padding: "15px" }}>
         <div className="row justify-content-around">
           {/* First Card */}
           <div className="col-md-4">
           <div className="card" style={{ width: "100%" }}>
-              <img className="card-img-top" src={PerScholas} alt="Card image cap" style ={{ objectFit: "contain", width: "100%",height: "250px" }} />
+              <img className="card-img-top card-img-custom" src={PerScholas} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Full-Stack Development</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the content
+                  16-Week program located in Seattle, WA. 
                 </p>
               </div>
               <ul className="list-group list-group-flush">
@@ -161,16 +156,16 @@ const Experience = () => {
           {/* Second Card */}
           <div className="col-md-4 mb-4">
             <div className="card" style={{ width: "100%" }}>
-              <img className="card-img-top" src={UniversityIllinois} alt="Card image cap" style ={{ objectFit: "contain", width: "100%", height: "250px"}}/>
+              <img className="card-img-top card-img-custom" src={UniversityIllinois} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">CyberGIS</h5>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up the bulk of the content
+                  Course offered through Coursera covering the fundamentals and advantages of utilizing CyberGIS
                 </p>
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">Cras justo odio</li>
-                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">GIS API</li>
+                <li className="list-group-item">Utilizing Cloud Services</li>
                 <li className="list-group-item">Vestibulum at eros</li>
               </ul>
               <div className="card-body">
@@ -187,7 +182,7 @@ const Experience = () => {
           {/* Third Card */}
           <div className="col-md-4 mb-4">
             <div className="card" style={{ width: "100%" }}>
-              <img className="card-img-top" src={UM} alt="Card image cap" style ={{ objectFit: "contain", width: "100%", height: "250px"}}/>
+              <img className="card-img-top card-img-custom" src={UM} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Python for Everybody</h5>
                 <p className="card-text">

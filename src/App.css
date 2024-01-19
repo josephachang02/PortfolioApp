@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
    }
-  
+  /* This will adjust the mapbox within the container */
    .App {
     width: 100vw;
     height: 100vh;
@@ -34,7 +34,7 @@
     height:500px;
     width:100%;
   }
-   /* Tab Navigation */
+   /* Tab Navigation between nav */
   ul.nav {
     width: 60%;
     margin: 0 auto 2rem;

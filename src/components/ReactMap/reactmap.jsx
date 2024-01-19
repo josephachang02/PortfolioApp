@@ -1,10 +1,6 @@
-import React from 'react'
-import { useState } from 'react'
-import ReactMapGL from "react-map-gl"
 import Tabs from './tabs.jsx';
-
-
 const reactMap = () => {
+  // Looking to revising this portion to implement mapbox design into the page
     // const [viewport, setViewport] = useState({
     //     latitude: 0.1137603,
     //     longitude: 51.5098109,
