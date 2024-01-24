@@ -5,8 +5,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  padding-bottom: 10px;
+  padding: 10px;
+  padding-bottom: 5px;
   transition: all 0.3s ease;
 }
 
@@ -17,11 +17,11 @@ header.shrink {
   position: relative;
   width: fit-content;
   height: fit-content;
-  margin: 15px;
+  margin: 5px;
   flex-shrink: 0;
 }
 .Logo {
-  width: 200px; /* Set the initial width */
+  width: 150px; /* Set the initial width */
   height: auto;
   transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
 }
