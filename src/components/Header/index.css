@@ -5,9 +5,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px;
   padding-bottom: 5px;
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100%;
 }
 
 header.shrink {
@@ -19,11 +23,21 @@ header.shrink {
   height: fit-content;
   margin: 5px;
   flex-shrink: 0;
+  margin-top: auto;
 }
+
 .Logo {
   width: 150px; /* Set the initial width */
   height: auto;
-  transition: transform 0.5s ease-in-out; /* Add a smooth transition effect */
+  transition: transform 0.5s ease-in-out;
+   /* Add a smooth transition effect */
+}
+
+.small-logo {
+  width: 30px; /* Allow the width to adjust based on the height */
+  height: 20%; /* Set the height as a percentage of the small navbar height */
+  top: 0;
+  position: fixed;
 }
   
 .Logo:hover {
@@ -32,13 +46,35 @@ header.shrink {
 
 
 .navbar {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  margin: 0;
-  margin-right: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: height 0.5s ease 0.8s, background-color 0.5s ease 0.3s; /* Adjust the duration and easing as needed */
+}
+
+.shrink {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  opacity: 80%;
+  height: 40px;
+  transform: all 3s ease;
+  padding: 2px;
+}
+.small-navbar {
+  height: 60px;
+  transform: all 3s ease;
+  top: 0;
+  z-index: 9990;
+  margin: 10px;
+  
+}
+
+body {
+  padding-top: 45px;
 }
   
 .navbar li {
