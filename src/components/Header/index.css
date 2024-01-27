@@ -4,33 +4,30 @@ header {
   display: flex;
   align-items: center;
   transition: all 0.8s ease;
-  top: 0;
+  top: 1;
 }
 
 header.shrink {
   padding: 5px;
+  max-height: 250px;
+
 }
 .logo-container {
-  position: relative;
-  width: fit-content;
-  height: fit-content;
-  margin: 5px;
+  margin: 10px;
   flex-shrink: 0;
-  margin-top: auto;
+  position: top;
+  padding-left: 10px;
 }
 
 .Logo {
-  width: 150px; /* Set the initial width */
-  height: auto;
+  width: 100px; /* Set the initial width */
   transition: transform 0.5s ease-in-out;
-   /* Add a smooth transition effect */
 }
 
 .small-logo {
-  width: 30px; /* Allow the width to adjust based on the height */
-  height: 20%; /* Set the height as a percentage of the small navbar height */
+  width: 30px; 
+  justify-content: center;
   top: 0;
-  position: fixed;
 }
   
 .Logo:hover {
@@ -41,9 +38,9 @@ header.shrink {
 .navbar {
   position: sticky;
   top: 0;
-  left: 0;
+  left: 15;
   width: 100%;
-  z-index: 1000;
+  z-index: 1;
   transition: height 0.5s ease 0.8s, background-color 0.5s ease 0.3s; /* Adjust the duration and easing as needed */
 }
 
@@ -67,28 +64,25 @@ header.shrink {
 }
 
 body {
-  padding-top: 45px;
+  padding-bottom: 45px;
 }
   
 .navbar li {
   margin: 0 10px;
   position: relative;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
 }
-  .navbar li:hover .dropdown {
-    display: block;
-  }
   
-  .navbar a {
+.navbar a {
   text-decoration: none;
+  font-size: 16px;
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  }
+}
 
 .NavTitle {
   position: relative;
-  font-size: 50px;
   text-decoration: none;
   transition: font-size 0.2s ease-in-out;
 }
@@ -109,7 +103,7 @@ body {
   }
 
 
-@media (max-width: 628px) {
+@media (max-width: 340px) {
   header {
     flex-direction: column;
     align-items: center;
