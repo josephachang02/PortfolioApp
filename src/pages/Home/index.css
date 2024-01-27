@@ -20,10 +20,8 @@
   flex: 1;
   padding: 25px;
   max-width: 300px;
-  margin-left: 10px;
-  align-content: center;
-  
 }
+
 #profilePicture.fade-in {
   opacity: 1;
   transform: translateY(0);
@@ -64,11 +62,7 @@
 
   #profilePicture {
     display: flex;
-    max-width: 200px;
-    height:auto;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    max-width: 240px;
   }
   #profilePic{
     display: flex;
