@@ -1,17 +1,10 @@
 header {
   background-color: #857366;
-  opacity: 0.70;
   color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  padding-bottom: 5px;
   transition: all 0.8s ease;
-  position: fixed;
-  z-index: 999;
   top: 0;
-  width: 100%;
 }
 
 header.shrink {

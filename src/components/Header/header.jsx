@@ -52,16 +52,6 @@ const Header = () => {
               {'Experience'}
             </Link>
           </li>
-          <li>
-            <Link href="/Projects" className="NavTitle">
-              {'Projects'}
-            </Link>
-          </li>
-          <li>
-            <Link href="contact" className="NavTitle">
-              {'Contact Me'}
-            </Link>
-          </li>
         </ul>
       </nav>
     </header>
