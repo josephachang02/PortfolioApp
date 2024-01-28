@@ -8,6 +8,7 @@ import Link from '@mui/material/Link';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import DescriptionIcon from '@mui/icons-material/Description';
 import React, { useEffect } from 'react';
 import HomeCarousel from "../../components/Carousel/carousel";
 
@@ -68,6 +69,9 @@ const Home = () => {
         <a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer" >
           <GitHubIcon sx={{ fontSize: '3em', color: 'black', '&:hover': GitHubIconStyle}}/>
         </a>
+        <a href={Resume} download target="_blank" rel="noopener noreferrer">
+        <DescriptionIcon sx={{ fontSize: '3em', color: 'black', '&:hover': iconHoverStyles }} />
+      </a>
     </div>
     </div>
     <br></br>
