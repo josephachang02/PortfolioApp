@@ -5,7 +5,7 @@ import { IoLogoJavascript, IoLogoCss3} from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa"
 
 
-
+// This will be the page for the software engineering, it has the elements of the icons and can be used later or added on. 
 
 const Projects = () => {
   return (

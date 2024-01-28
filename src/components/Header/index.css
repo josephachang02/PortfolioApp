@@ -4,7 +4,8 @@ header {
   display: flex;
   align-items: center;
   transition: all 0.8s ease;
-  top: 1;
+  min-width: 300px;
+  padding: 5px;
 }
 
 header.shrink {
@@ -16,7 +17,7 @@ header.shrink {
   margin: 10px;
   flex-shrink: 0;
   position: top;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .Logo {

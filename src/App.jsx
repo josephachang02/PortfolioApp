@@ -8,6 +8,7 @@ import Experience from './pages/Experience/experience.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Projects from './pages/Projects/projects'
 import GIS from './pages/GIS/gis'
+import UrbanPlanning from './pages/UrbanPlanning/UrbanPlanning.jsx'
 // import Footer from './components/Footer/footer.jsx'
 
 // looking to implement react-component for browser view adjustment compatible for mobile
@@ -22,6 +23,7 @@ function App() {
         <Route exact path ="/" element={<Home />} />
         <Route exact path ="/Experience" element={<Experience />} />
         <Route exact path ="/GIS" element={<GIS />} />
+        <Route exact path ="/UrbanPlanning" element={<UrbanPlanning />} />
         <Route exact path ="/Projects" element={<Projects />} />
         <Route exact path ="/NBA" element={<NBAApplication />} />
         <Route exact path ="/WorkoutApplication" element={<WorkoutApplication />} />

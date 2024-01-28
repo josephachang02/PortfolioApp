@@ -1,0 +1,54 @@
+#UP-Card {
+max-width: 800px;
+min-height: 400px;
+min-width:300px;
+display: flex;
+align-items: center;
+background-color: antiquewhite;
+margin: auto;    
+/* need to change margin to include buffer between the top of the page's content */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    flex:1;
+
+}
+  
+.image {
+max-width: 250px;
+margin: 20px;
+border-color: rgb(77, 77, 77);
+}
+
+.button {
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    color: white;
+    background-color: #857366;
+}
+
+.button:hover {
+    color: black;
+    background-color: rgb(252, 251, 250);
+    border-color:#857366 ;
+}
+
+
+@media (max-width: 450px) {
+    #UP-Card {
+        margin: 15px;
+    }
+
+    .content {
+      flex-direction: column; /* Stack items vertically on small screens */
+    }
+  
+    .image {
+      margin-bottom: 0; /* Remove bottom margin on small screens */
+    }
+  }
