@@ -5,3 +5,6 @@
     margin: 10px;
   }
   
+.list-group .list-group-item {
+  size: 12px;
+}

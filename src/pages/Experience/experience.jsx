@@ -22,13 +22,12 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">GIS Analyst/Project Team Lead</h5>
                 <p className="card-text"style={{fontWeight: "lighter", fontSize: "13px"}}>
-                  Some quick example text to build on the card title and make up the bulk of the content
-                </p>
+3 Years of experience optimizing and managing geo-data through SQL, Python, and ArcPro            </p>
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">Cras justo odio</li>
-                <li className="list-group-item">Dapibus ac facilisis in</li>
-                <li className="list-group-item">Vestibulum at eros</li>
+                <li className="list-group-item">Implemented 200+ Low Emission Zones in EU</li>
+                <li className="list-group-item">High-Urban Dense road networks unnaccounted in countries like BR and IN</li>
+                <li className="list-group-item">Safe destination routing for U.S. Trucking</li>
               </ul>
               <div className="card-body">
                 <a href="#" className="card-link">
@@ -48,20 +47,16 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Forterra</h5>
                 <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
-                  Some quick example text to build on the card title and make up the bulk of the content
-                </p>
+Utilized Census Tract and Collector Data to create a web map revealing the correlation between socio-economic relations and food desert across Snohomish County                </p>
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">Cras justo odio</li>
-                <li className="list-group-item">Dapibus ac facilisis in</li>
-                <li className="list-group-item">Vestibulum at eros</li>
+                <li className="list-group-item">Spatial Join between Census Tract and Collector</li>
+                <li className="list-group-item">Detailed Metadata with precise Geodatabase management</li>
+                <li className="list-group-item">Launched ArcGIS Online platform</li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
-                  Card link
-                </a>
-                <a href="#" className="card-link">
-                  Another link
+                <a href="https://forterra.maps.arcgis.com/apps/mapviewer/index.html?webmap=3238846d43634764b230283c2cd65d61" className="card-link">
+                  Forterra ArcGIS Online
                 </a>
               </div>
             </div>
@@ -79,20 +74,17 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Geographic Information Systems</h5>
                 <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
-                  Eom Example Text
+                  Utilized Esri Suite products (ArcMap, ArcGIS Pro, ArcGIS Surveyor) to deliver a range of products showcasing our skills in Cartography, Data Analysis, and Geospatial Data Management
                 </p>
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">Cras justo odio</li>
-                <li className="list-group-item">Dapibus ac facilisis in</li>
-                <li className="list-group-item">Vestibulum at eros</li>
+                <li className="list-group-item">GIS Modeling and Analysis</li>
+                <li className="list-group-item">CAD/GIS integration</li>
+                <li className="list-group-item">Python in GIS</li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
-                  Card link
-                </a>
-                <a href="#" className="card-link">
-                  Another link
+                <a href="https://www.pce.uw.edu/certificates/geographic-information-systems" className="card-link">
+                 Program Overview
                 </a>
               </div>
             </div>
@@ -105,20 +97,17 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Urban Planning</h5>
                 <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
-                  Some quick example text to build
+                  Comprehensive topics of ethical, inclusive urban-spaces, urban design and history of Urban Planning in U.S.
                 </p>
               </div>
               <ul className="list-group list-group-flush">
-                <li className="list-group-item">Cras justo odio</li>
-                <li className="list-group-item">Dapibus ac facilisis in</li>
-                <li className="list-group-item">Vestibulum at eros</li>
+                <li className="list-group-item">Conducted mock Comprehensive Plans/Community Meetings</li>
+                <li className="list-group-item">Technical Writing and Ethical Practices in Planning</li>
+                <li className="list-group-item">Planning For Sustainable Communities</li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
-                  Card link
-                </a>
-                <a href="#" className="card-link">
-                  Another link
+                <a href="https://www.wwu.edu/majors/urban-planning" className="card-link">
+                  Program Overview
                 </a>
               </div>
             </div>
@@ -143,11 +132,8 @@ const Experience = () => {
                 <li className="list-group-item">Back-End Development (Mondo DB)</li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
-                  Card link
-                </a>
-                <a href="#" className="card-link">
-                  Another link
+                <a href="https://perscholas.org/courses/software-engineer/seattle/" className="card-link">
+                  Program Overview
                 </a>
               </div>
             </div>
@@ -169,11 +155,11 @@ const Experience = () => {
                 <li className="list-group-item">Vestibulum at eros</li>
               </ul>
               <div className="card-body">
-                <a href="#" className="card-link">
-                  Card link
-                </a>
-                <a href="#" className="card-link">
-                  Another link
+                <a href="https://www.coursera.org/learn/cybergis" className="card-link">
+                  Course Overview
+                  </a>
+                <a href="https://coursera.org/share/5938a3ed7ee49df6a5195c16218126a1" className="card-link">
+                  Proof of Certificate
                 </a>
               </div>
             </div>
@@ -186,7 +172,7 @@ const Experience = () => {
               <div className="card-body">
                 <h5 className="card-title">Python for Everybody Specialization</h5>
                 <p className="card-text">
-                  Extensive Course 
+                  Extensive Course covering the structure syntax to incorporating API and web use integration. 
                 </p>
               </div>
               <ul className="list-group list-group-flush">

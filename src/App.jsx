@@ -9,7 +9,7 @@ import { Routes, Route } from 'react-router-dom'
 import Projects from './pages/Projects/projects'
 import GIS from './pages/GIS/gis'
 import UrbanPlanning from './pages/UrbanPlanning/UrbanPlanning.jsx'
-// import Footer from './components/Footer/footer.jsx'
+import Footer from './components/Footer/footer.jsx'
 
 // looking to implement react-component for browser view adjustment compatible for mobile
 // import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
@@ -28,7 +28,7 @@ function App() {
         <Route exact path ="/NBA" element={<NBAApplication />} />
         <Route exact path ="/WorkoutApplication" element={<WorkoutApplication />} />
     </Routes>
-    {/* <Footer /> */}
+    <Footer />
     </div>
   );
 }
