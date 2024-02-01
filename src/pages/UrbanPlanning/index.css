@@ -1,61 +1,93 @@
 #CardContainer {
   display: flex;
   overflow: auto;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%
 }
 
 #UP-Card {
-max-width: 800px;
-min-height: 400px;
-min-width:300px;
-display: flex;
-align-items: center;
-background-color: antiquewhite;
-margin: auto;    
-margin-top: 45px;
-
-/* need to change margin to include buffer between the top of the page's content */
+  max-width: 700px;
+  min-height: 400px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  background-color: antiquewhite;
+  margin: auto;
+  margin-top: 45px;
+  margin-right: 35px;
+  margin-left:35px;
 }
 
 .content {
-    display: flex;
-    align-items: center;
-    min-width: 300px;
-    flex:1;
-
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  flex: 1;
 }
-  
+
 .image {
-max-width: 250px;
-margin: 20px;
-border-color: rgb(77, 77, 77);
+  max-width: 250px;
+  margin: 20px;
+  border-color: rgb(77, 77, 77);
+}
+
+.TextCard {
+  margin: 15px;
+  max-height: 323px;
 }
 
 .button {
-    border-radius: 12px;
-    padding: 10px 18px;
-    font-size: 14px;
-    transition-duration: 0.4s;
-    color: white;
-    background-color: #857366;
+  border-radius: 12px;
+  padding: 10px 18px;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: #857366;
 }
 
 .button:hover {
-    color: black;
-    background-color: rgb(252, 251, 250);
-    border-color:#857366 ;
+  color: black;
+  background-color: rgb(252, 251, 250);
+  border-color: #857366;
 }
 
-
-@media (max-width: 450px) {
-    #UP-Card {
-        margin: 15px;
-    }
-
-    .content {
-      flex-direction: column; /* Stack items vertically on small screens */
-    }
-  
-    .image {
-      margin-bottom: 0; /* Remove bottom margin on small screens */
-    }
+@media (max-width: 1020px) {
+  #UP-Card {
+    margin: 15px;
+    max-width: 100%; /* Ensure the card takes full width on small screens */
   }
+
+  .content {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center content in the vertical direction */
+    text-align: center; /* Center text content */
+  }
+
+  .image {
+    margin-bottom: 15px; /* Add some bottom margin for spacing */
+  }
+}
+
+@media (max-width: 660px) {
+  #CardContainer {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center cards horizontally */
+  }
+
+  #UP-Card {
+    flex-direction: column; /* Stack items vertically on small screens */
+    max-width: 100%; /* Ensure the card takes full width on small screens */
+    margin-bottom: 15px; /* Add some bottom margin for spacing between cards */
+  }
+
+  .content {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center content in the vertical direction */
+    text-align: center; /* Center text content */
+  }
+
+  .image {
+    margin-bottom: 15px; /* Add some bottom margin for spacing */
+  }
+}

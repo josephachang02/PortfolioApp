@@ -19,6 +19,8 @@ const footer = () => {
       <li><a href="/Experience">Experience</a></li>
     </ul>
 
+<div className= "footer-divider"></div>
+
     <div className="logo">
       <a href = "/">
       <img src= {Logo} alt="Logo" />

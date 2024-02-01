@@ -9,10 +9,28 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import HomeCarousel from "../../components/Carousel/carousel";
 
 const Home = () => {
+  const [shrink, setShrink] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setShrink(true);
+      } else {
+        setShrink(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     const onButtonClick = () => {
         const pdfUrl = "../../../src/Images/CSS/GIS_Resume.pdf";
         const link = document.createElement("a");
@@ -40,8 +58,7 @@ const Home = () => {
       };
     return (
         <>
-        
-        <div id="content-split-container">
+        <div className= {`${shrink ? 'contentView' : ''} "content-split-container"`}>
         <div id="profilePic">
             <img id="profilePicture" src ={ProfilePicture} alt= "Profile" />
         </div>
@@ -88,7 +105,6 @@ const Home = () => {
 <HomeCarousel />
 
 
-            
         </>
     );
 };

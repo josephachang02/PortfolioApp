@@ -9,7 +9,14 @@
 #content-split-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+}
+
+.content-split-container{
+  margin-top:120px;
+}
+
+.contentView {
+  margin-top: 120px;
 }
 
 #profilePicture.fade-in:hover {

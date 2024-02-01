@@ -2,10 +2,13 @@ header {
   background-color: #857366;
   color: #fff;
   display: flex;
-  align-items: center;
-  transition: all 0.8s ease;
-  min-width: 300px;
+  transition: all .7s ease-in;
+  min-width: 150px;
   padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+  height: 107px;
+
 }
 
 header.shrink {
@@ -13,6 +16,7 @@ header.shrink {
   max-height: 250px;
 
 }
+
 .logo-container {
   margin: 10px;
   flex-shrink: 0;
@@ -99,11 +103,11 @@ header.shrink {
   }
 
 
-@media (max-width: 340px) {
+@media (max-width: 320px) {
   header {
     flex-direction: column;
     align-items: center;
-    }
+    min-width: 100vw;    }
   
   .logo-container {
     margin-bottom: 10px;

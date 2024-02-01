@@ -5,15 +5,22 @@ body {
 #footerContainer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom: auto;
-  padding-bottom: 0;
   background-color: #857366;
 }
 
+.footer-divider {
+  width: 2px;
+  height: 50px;
+  background-color: hsla(0, 0%, 96%, 0.884);
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+  justify-content: center;
+}
 .logo {
   display: flex;
   align-items: center;
