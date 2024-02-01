@@ -8,7 +8,7 @@ const urbanPlanning = () => {
     
 
     return (
-        <div>
+        <div id ="CardContainer">
         <Card id = "UP-Card">
           <CardContent class = "content">
             {/* Left Content (Image) */}

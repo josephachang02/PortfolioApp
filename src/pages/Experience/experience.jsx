@@ -14,10 +14,10 @@ const Experience = () => {
       
 {/* Certificates */}
 <h2 style ={{textAlign: "center", fontFamily: 'Kaisei Tokumin', margin: "15px"}}>Experience</h2>
-<div className="container" style={{ padding: "15px", fontFamily: 'Kaisei Tokumin' }}>
+<div className="container" style={{ padding: "15px", fontFamily: 'Kaisei Tokumin'}}>
         <div className="row justify-content-around">
           <div className="col-md-4">
-            <div className="card" style={{ width: "100%"}}>
+            <div className="card" style={{ width: "100%",marginTop: "35px"}}>
               <img className="card-img-top card-img-custom" style={{ padding: "10px" }} src={GoogleMaps} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">GIS Analyst/Project Team Lead</h5>
@@ -42,7 +42,7 @@ const Experience = () => {
 
           {/* Second Card */}
           <div className="col-md-4 mb-4">
-            <div className="card" style={{ width: "100%" }}>
+            <div className="card" style={{ width: "100%" ,marginTop: "35px"}}>
               <img className="card-img-top card-img-custom" src={Forterra} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Forterra</h5>
@@ -69,7 +69,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
         <div className="row justify-content-around">
           {/* First Card */}
           <div className="col-md-4">
-          <div className="card" style={{ width: "100%" }}>
+          <div className="card" style={{ width: "100%",marginTop: "35px" }}>
               <img className="card-img-top card-img-custom" src={UW} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Geographic Information Systems</h5>
@@ -92,7 +92,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
 
           {/* Second Card */}
           <div className="col-md-4 mb-4">
-            <div className="card" style={{ width: "100%" }}>
+            <div className="card" style={{ width: "100%",marginTop: "35px" }}>
               <img className="card-img-top card-img-custom" style = {{backgroundColor: "#283e83"}}src={WWU} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Urban Planning</h5>
@@ -118,7 +118,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
         <div className="row justify-content-around">
           {/* First Card */}
           <div className="col-md-4">
-          <div className="card" style={{ width: "100%" }}>
+          <div className="card" style={{ width: "100%" ,marginTop: "35px"}}>
               <img className="card-img-top card-img-custom" src={PerScholas} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Full-Stack Development</h5>
@@ -141,7 +141,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
 
           {/* Second Card */}
           <div className="col-md-4 mb-4">
-            <div className="card" style={{ width: "100%" }}>
+            <div className="card" style={{ width: "100%" ,marginTop: "35px"}}>
               <img className="card-img-top card-img-custom" style={{ paddingBottom: "40px", justifyContent: "center", marginTop: "60px" }}src={UniversityIllinois} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">CyberGIS</h5>
@@ -167,7 +167,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
 
           {/* Third Card */}
           <div className="col-md-4 mb-4">
-            <div className="card" style={{ width: "100%"}}>
+            <div className="card" style={{ width: "100%",marginTop: "35px"}}>
               <img className="card-img-top card-img-custom" src={UM} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Python for Everybody Specialization</h5>

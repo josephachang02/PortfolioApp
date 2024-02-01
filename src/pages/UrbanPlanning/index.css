@@ -1,3 +1,8 @@
+#CardContainer {
+  display: flex;
+  overflow: auto;
+}
+
 #UP-Card {
 max-width: 800px;
 min-height: 400px;
@@ -6,6 +11,8 @@ display: flex;
 align-items: center;
 background-color: antiquewhite;
 margin: auto;    
+margin-top: 45px;
+
 /* need to change margin to include buffer between the top of the page's content */
 }
 
