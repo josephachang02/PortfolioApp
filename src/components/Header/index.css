@@ -1,35 +1,41 @@
+
+/* Overall Component for Header  */
 header {
   background-color: #857366;
   color: #fff;
   display: flex;
   transition: all .7s ease-in-out; 
-  min-width: 150px;
   padding: 5px;
-  justify-content: space-between;
   align-items: center;
   height: 107px;
-}
-
-header.shrink {
-  padding: 5px;
-  max-height: 250px;
+  min-width: 100vw;
 }
 
 .logo-container {
-  margin: 10px;
   flex-shrink: 0;
   position: top;
-  padding-left: 5px;
   transition: height 0.7s ease-in-out; 
 }
-
 .Logo {
   width: 100px; /* Set the initial width */
   transition: transform 0.5s ease-in-out, width 0.5s ease-in-out; /* Add width transition */
 }
 
+.navbar {
+  margin:10px;
+  width: 100%;
+  z-index: 1;
+  transition: height 0.5s ease 0.8s;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header.shrink {
+  padding: 5px;
+  max-height: 250px;
+  width:100%
+}
 .small-logo {
-  width: 30px; 
   justify-content: center;
   top: 0;
   transition: width 0.5s ease-in-out; /* Add width transition for small-logo state */
@@ -40,7 +46,7 @@ header.shrink {
 }
 
 header.shrink .Logo {
-  width: 50px; /* Adjust the width during the shrink state */
+  width: 35px; /* Adjust the width during the shrink state */
 }
 
 header:not(.shrink) .small-logo {
@@ -48,33 +54,24 @@ header:not(.shrink) .small-logo {
   transform: scale(1); /* Reset the scale for a smooth transition effect */
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  left: 15;
-  width: 100%;
-  z-index: 1;
-  transition: height 0.5s ease 0.8s,
-}
+
 
 .shrink {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 50;
   height: 40px;
   transform: all 3s ease;
-  padding: 2px;
+
 }
 .small-navbar {
-  height: 60px;
   transform: all 3s ease;
-  top: 0;
-  z-index: 9990;
-  margin: 10px;
+  margin: 5px;
   
 }
   
+
+
 .navbar li {
   margin: 0 10px;
   position: relative;
@@ -111,14 +108,23 @@ header:not(.shrink) .small-logo {
   }
 
 
-@media (max-width: 320px) {
+@media (max-width: 561px) {
   header {
     flex-direction: column;
     align-items: center;
-    min-width: 100vw;    }
+    width: 100% !important;
+    min-width: 100%;
+    min-height: 150px;  
+  }
+
+    header.shrink {
+      padding: 5px;
+      height: 50px;
+      width:100%;
+      min-width: 100%;  
+    }
   
   .logo-container {
-    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
     }
@@ -133,7 +139,7 @@ header:not(.shrink) .small-logo {
     }
 
 .navbar a {
-      size: 12px;
+      size: 10px;
       }
   
   .NavTitle {
@@ -141,7 +147,7 @@ header:not(.shrink) .small-logo {
     margin: 10px;
     flex: 1;
     flex-direction: row;
-    size: 13px;
+    size: 10px;
     }
   
   .NavTitle:hover::before {
