@@ -2,19 +2,17 @@ header {
   background-color: #857366;
   color: #fff;
   display: flex;
-  transition: all .7s ease-in;
+  transition: all .7s ease-in-out; 
   min-width: 150px;
   padding: 5px;
   justify-content: space-between;
   align-items: center;
   height: 107px;
-
 }
 
 header.shrink {
   padding: 5px;
   max-height: 250px;
-
 }
 
 .logo-container {
@@ -22,23 +20,33 @@ header.shrink {
   flex-shrink: 0;
   position: top;
   padding-left: 5px;
+  transition: height 0.7s ease-in-out; 
 }
 
 .Logo {
   width: 100px; /* Set the initial width */
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, width 0.5s ease-in-out; /* Add width transition */
 }
 
 .small-logo {
   width: 30px; 
   justify-content: center;
   top: 0;
+  transition: width 0.5s ease-in-out; /* Add width transition for small-logo state */
 }
   
-.Logo:hover {
-  transform: scale(1.1); /* Increase the scale on hover (adjust as needed) */
+.Logo:hover, header:not(.shrink) .small-logo {
+  transform: scale(1.1); /* Increase the scale on hover or when header is not in shrink state */
 }
 
+header.shrink .Logo {
+  width: 50px; /* Adjust the width during the shrink state */
+}
+
+header:not(.shrink) .small-logo {
+  width: 30px; /* Set the width for the small-logo state */
+  transform: scale(1); /* Reset the scale for a smooth transition effect */
+}
 
 .navbar {
   position: sticky;
@@ -46,7 +54,7 @@ header.shrink {
   left: 15;
   width: 100%;
   z-index: 1;
-  transition: height 0.5s ease 0.8s, background-color 0.5s ease 0.3s; /* Adjust the duration and easing as needed */
+  transition: height 0.5s ease 0.8s,
 }
 
 .shrink {

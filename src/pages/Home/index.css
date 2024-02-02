@@ -14,7 +14,7 @@
 }
 
 .content-split-containershrink {
-  margin-top: 150px !important; 
+  margin-top: 150px; 
   display: flex;
   align-items: center;
 }
