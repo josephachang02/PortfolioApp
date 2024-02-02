@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 500) {
+      if (window.scrollY > 30) {
         setShrink(true);
       } else {
         setShrink(false);
@@ -58,7 +58,7 @@ const Home = () => {
       };
     return (
         <>
-        <div className= {`${shrink ? 'contentView' : ''} "content-split-container"`}>
+        <div className={`content-split-container${shrink ? 'shrink' : ''}`}>
         <div id="profilePic">
             <img id="profilePicture" src ={ProfilePicture} alt= "Profile" />
         </div>
