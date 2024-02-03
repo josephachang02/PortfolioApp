@@ -52,7 +52,7 @@ header.shrink .Logo {
 }
 
 header:not(.shrink) .small-logo {
-  width: 30px; /* Set the width for the small-logo state */
+  width: 35px; /* Set the width for the small-logo state */
   transform: scale(1); /* Reset the scale for a smooth transition effect */
 }
 
@@ -71,7 +71,7 @@ header:not(.shrink) .small-logo {
   
 .navbar a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 20px;
   color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -98,18 +98,20 @@ header:not(.shrink) .small-logo {
   }
 
 
-@media (max-width: 582px) {
+
+
+@media (max-width: 680px) {
   header {
     flex-direction: column;
     align-items: center;
     width: 100%;
     min-width: 300px;
-    height: 150px;  
+    height: 160px;  
   }
 
   .header.shrink-header {
     padding: 5px;
-    height: 80px;
+    height: 82px;
     justify-content: start;
     
   }
@@ -132,8 +134,11 @@ header:not(.shrink) .small-logo {
       margin:0 5px;
     }
     .navbar a {
-      size: 10px;
-      }
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
   
   .NavTitle {
     text-decoration: none;
@@ -157,15 +162,16 @@ header:not(.shrink) .small-logo {
     transition: width 0.2s ease-in-out;
 }}
 
-@media (max-width: 467px) {
+@media (max-width: 570px) {
   header {
-    height:170px
+    height:150px;
+    justify-content: space-between;
   }
   .header.shrink-header {
     position: fixed;
     top: 0;
     z-index: 50;
-    height: 100px;
+    height: 90px;
     width: 100%; /* Occupy the full width */
     transition: all 0.3s ease;
     margin-bottom: 20px;
@@ -177,4 +183,42 @@ header:not(.shrink) .small-logo {
   .navbar.li {
     size: 5px;
     }
+    .navbar a {
+      text-decoration: none;
+      font-size: 16px;
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    header:not(.shrink) .small-logo {
+      width: 40px; /* Set the width for the small-logo state */
+      transform: scale(1); /* Reset the scale for a smooth transition effect */
+    }
+}
+
+@media (max-width: 475px) {
+  header {
+    height:150px;
+  }
+
+  .header.shrink-header {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    height: 85px;
+    width: 100%; /* Occupy the full width */
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .navbar li {
+    margin:0 7.2px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 }
