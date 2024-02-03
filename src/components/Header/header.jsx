@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={shrink ? 'shrink' : ''}>
+    <header className={`header ${shrink ? 'shrink-header' : ''}`}>
       <div className="logo-container">
         <a href="/">
           <img id="Logo" src={Logo} alt="Logo" className={`Logo ${shrink ? 'small-logo' : ''}`} />

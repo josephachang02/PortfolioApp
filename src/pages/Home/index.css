@@ -14,7 +14,7 @@
 }
 
 .content-split-containershrink {
-  margin-top: 150px; 
+  margin-top: 140px; 
   display: flex;
   align-items: center;
 }
@@ -43,16 +43,12 @@
 #aboutContent.fade-in {
   flex: 1;
   padding-left: 10px;
-  margin: 50px;
   align-items: space-around;
   text-align: center;
   box-sizing: border-box;
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1s ease-in-out, transform 1.2s ease-in-out;
-}
-
-#aboutContent.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
@@ -68,12 +64,26 @@
   padding: 20px;
 }
 
-@media (max-width: 628px) {
-  #content-split-container {
+#contAbout h2 {
+  text-align: center;
+}
+
+#contAbout p {
+  padding: 15px;
+}
+
+@media (max-width: 630px) {
+  .content-split-container {
     flex-direction: column;
     text-align: center;
-  }
+    
 
+  }
+  .content-split-containershrink {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 200px;
+  }
   #profilePicture {
     display: flex;
     max-width: 240px;

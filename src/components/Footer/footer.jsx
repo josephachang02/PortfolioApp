@@ -9,30 +9,19 @@ import DescriptionIcon from '@mui/icons-material/Description';
 
 const footer = () => {
   return (
+    <div id ="footer">
     <div id = "footerContainer">
-    
-
-    <ul className="links">
-      <li><a href="/GIS">GIS</a></li>
-      <li><a href="/UrbanPlanning">Urban Planning</a></li>
-      <li><a href="/SoftwareEngineering">Software Engineering</a></li>
-      <li><a href="/Experience">Experience</a></li>
-    </ul>
-
+<a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
 <div className= "footer-divider"></div>
-
-    <div className="logo">
-      <a href = "/">
-      <img src= {Logo} alt="Logo" />
-      </a>
-    </div>
-
-    <div className="icons">
-      <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
-      <a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
-      <a href="https://www.instagram.com/joea_chang/" target ="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
-      <a href={Resume} download target="_blank" rel="noopener noreferrer"><DescriptionIcon /></a>
-    </div>
+<a href="https://github.com/josephachang02" target ="_blank" rel="noopener noreferrer"><GitHubIcon /></a>
+<div className= "footer-divider"></div>
+<a href="https://www.instagram.com/joea_chang/" target ="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
+<div className= "footer-divider"></div>
+<a href={Resume} download target="_blank" rel="noopener noreferrer" alt = "Download Resume"><DescriptionIcon /></a>
+  </div>
+  <div className='copyright'>
+    <p>fdsa</p>
+  </div>
   </div>
 );
 }

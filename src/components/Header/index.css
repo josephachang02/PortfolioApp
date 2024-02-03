@@ -9,6 +9,7 @@ header {
   align-items: center;
   height: 107px;
   min-width: 100vw;
+  justify-content: space-between;
 }
 
 .logo-container {
@@ -23,22 +24,23 @@ header {
 
 .navbar {
   margin:10px;
-  width: 100%;
   z-index: 1;
   transition: height 0.5s ease 0.8s;
-  display: flex;
-  justify-content: flex-end;
+  margin-right: 10px;
 }
 
-header.shrink {
-  padding: 5px;
-  max-height: 250px;
-  width:100%
+.shrink-header {
+  position: fixed;
+  top: 0;
+  z-index: 50;
+  height: 40px;
+  width: 100%; /* Occupy the full width */
+  transition: all 0.3s ease
 }
 .small-logo {
   justify-content: center;
   top: 0;
-  transition: width 0.5s ease-in-out; /* Add width transition for small-logo state */
+  transition: width 0.2s ease-in-out; /* Add width transition for small-logo state */
 }
   
 .Logo:hover, header:not(.shrink) .small-logo {
@@ -54,23 +56,11 @@ header:not(.shrink) .small-logo {
   transform: scale(1); /* Reset the scale for a smooth transition effect */
 }
 
-
-
-.shrink {
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  height: 40px;
-  transform: all 3s ease;
-
-}
 .small-navbar {
   transform: all 3s ease;
   margin: 5px;
   
 }
-  
-
 
 .navbar li {
   margin: 0 10px;
@@ -108,21 +98,21 @@ header:not(.shrink) .small-logo {
   }
 
 
-@media (max-width: 561px) {
+@media (max-width: 582px) {
   header {
     flex-direction: column;
     align-items: center;
-    width: 100% !important;
-    min-width: 100%;
-    min-height: 150px;  
+    width: 100%;
+    min-width: 300px;
+    height: 150px;  
   }
 
-    header.shrink {
-      padding: 5px;
-      height: 50px;
-      width:100%;
-      min-width: 100%;  
-    }
+  .header.shrink-header {
+    padding: 5px;
+    height: 80px;
+    justify-content: start;
+    
+  }
   
   .logo-container {
     align-items: center;
@@ -138,16 +128,17 @@ header:not(.shrink) .small-logo {
     margin: 0 auto;
     }
 
-.navbar a {
+    .navbar.li {
+      margin:0 5px;
+    }
+    .navbar a {
       size: 10px;
       }
   
   .NavTitle {
     text-decoration: none;
-    margin: 10px;
     flex: 1;
-    flex-direction: row;
-    size: 10px;
+    flex-direction: row; 
     }
   
   .NavTitle:hover::before {
@@ -166,4 +157,24 @@ header:not(.shrink) .small-logo {
     transition: width 0.2s ease-in-out;
 }}
 
-      
+@media (max-width: 467px) {
+  header {
+    height:170px
+  }
+  .header.shrink-header {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    height: 100px;
+    width: 100%; /* Occupy the full width */
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+  }
+  ul.navbar {
+    margin:2px;
+    justify-content: space-around;
+  }
+  .navbar.li {
+    size: 5px;
+    }
+}

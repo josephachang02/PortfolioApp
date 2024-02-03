@@ -1,53 +1,27 @@
 body {
   font-family: Arial, sans-serif;
 }
-
-#footerContainer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#footer {
   background-color: #857366;
+  bottom:2px
 }
-
+#footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:45px
+}
+#footerContainer a {
+  margin: 0 25px;
+}
 .footer-divider {
   width: 2px;
-  height: 50px;
-  background-color: hsla(0, 0%, 96%, 0.884);
+  height: 35px;
+  background-color: hsla(0, 0%, 96%, 0.623);
   -webkit-transform: rotate(20deg);
   -ms-transform: rotate(20deg);
   transform: rotate(20deg);
   justify-content: center;
-}
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 50px; /* Adjust the width as needed */
-  height: auto;
-  margin-right: 10px;
-  padding-bottom: 10px;
-}
-
-.links {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  color: #333;
-  max-width: 30%;
-}
-
-.links li {
-  margin-right: 10px;
-}
-
-.links a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .icons {
@@ -55,8 +29,12 @@ body {
   justify-content: flex-end;
 }
 
-.icons a {
-  margin-left: 20px;
-  color: #fff;
+#footer a {
+  color: hsla(0, 0%, 96%, 0.623);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color:#ffffffef
 }
