@@ -91,8 +91,8 @@ const Home = () => {
         
 
 
-<HomeCarousel />
-
+<HomeCarousel/>
+{/* issues with the margin of the carousel overlapping footer */}
 
         </>
     );
