@@ -5,12 +5,30 @@ import UniversityIllinois from "../../../src/Images/CSS/UIllinois_logo.png";
 import UW from "../../../src/Images/CSS/UW_Logo.png";
 import WWU from "../../../src/Images/CSS/WWU_Logo.png";
 import UM from "../../../src/Images/CSS/UM_logo.png";
+import { useEffect , useState} from "react";
+import "./index.css"
 
 
 const Experience = () => {
+  const [shrink, setShrink] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setShrink(true);
+      } else {
+        setShrink(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <div>
+    <div className={`experience-section${shrink ? 'shrink' : ''}`}>
       
 {/* Certificates */}
 <h2 style ={{textAlign: "center", fontFamily: 'Kaisei Tokumin', margin: "15px"}}>Experience</h2>
@@ -115,14 +133,14 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
 
 <h2 style ={{textAlign: "center", fontFamily: 'Kaisei Tokumin', margin: "15px" }}>Certificates</h2>
       <div className="container" style={{ padding: "15px", fontFamily: 'Kaisei Tokumin' }}>
-        <div className="row justify-content-around">
+        <div className="row justify-content-around" style= {{marginBottom: '35px'}}>
           {/* First Card */}
           <div className="col-md-4">
           <div className="card" style={{ width: "100%" ,marginTop: "35px"}}>
               <img className="card-img-top card-img-custom" src={PerScholas} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Full-Stack Development</h5>
-                <p className="card-text">
+                <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
                   16-week bootcamp program located in Seattle, WA. 
                 </p>
               </div>
@@ -142,10 +160,10 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
           {/* Second Card */}
           <div className="col-md-4 mb-4">
             <div className="card" style={{ width: "100%" ,marginTop: "35px"}}>
-              <img className="card-img-top card-img-custom" style={{ paddingBottom: "40px", justifyContent: "center", marginTop: "60px" }}src={UniversityIllinois} alt="Card image cap" />
+              <img className="card-img-top card-img-custom" style={{ paddingBottom: "40px", justifyContent: "center",}}src={UniversityIllinois} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">CyberGIS</h5>
-                <p className="card-text">
+                <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
                   Course offered through Coursera covering the fundamentals and advantages of utilizing CyberGIS
                 </p>
               </div>
@@ -171,7 +189,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
               <img className="card-img-top card-img-custom" src={UM} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Python for Everybody Specialization</h5>
-                <p className="card-text">
+                <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
                   Extensive Course covering the structure syntax to incorporating API and web use integration. 
                 </p>
               </div>
@@ -189,6 +207,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
                 </a>
               </div>
             </div>
+            <br></br>
           </div>
         </div>
       </div>

@@ -31,18 +31,7 @@ const Home = () => {
     };
   }, []);
 
-    const onButtonClick = () => {
-        const pdfUrl = "../../../src/Images/CSS/GIS_Resume.pdf";
-        const link = document.createElement("a");
-        link.href = pdfUrl;
-        link.download = "JoeResume.pdf"; //name shown in url
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
     useEffect(() => {
-        
-        
         const profilePicture = document.getElementById('profilePicture');
     profilePicture.classList.add('fade-in');
 
@@ -95,7 +84,7 @@ const Home = () => {
     <div id="contAbout">
     <h2>My Background</h2>
 <p>With a solid foundation built during my 3 years as a GIS Analyst at Google, I took a bold step into the dynamic world of software engineering. In August 2023, driven by a passion for coding and a desire to deepen my impact in GIS, I chose to embrace the challenges and opportunities of this new journey. Little did I know, the realm of software engineering held a vast array of languages and knowledge, fueling my curiosity to explore further.</p>
-
+<br></br>
 <p>Since leaving my full-time role, I've been working part-time at the First Starbucks in Pike Place Market. Simultaneously, I've been wholeheartedly pursuing my passions in GIS and software engineering. This positive journey has not only enriched my skills but has also opened doors to exciting possibilities that continue to fuel my drive and determination.</p>
 
         </div>

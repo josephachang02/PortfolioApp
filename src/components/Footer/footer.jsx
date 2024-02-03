@@ -9,6 +9,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 
 const footer = () => {
   return (
+    <div id = "page-container">
     <div id ="footer">
     <div id = "footerContainer">
 <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
@@ -20,7 +21,8 @@ const footer = () => {
 <a href={Resume} download target="_blank" rel="noopener noreferrer" alt = "Download Resume"><DescriptionIcon /></a>
   </div>
   <div className='copyright'>
-    <p>fdsa</p>
+    <p id = "copyrightText">Copyright 2024 Developed by Joe Chang</p>
+  </div>
   </div>
   </div>
 );

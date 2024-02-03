@@ -3,11 +3,29 @@ import Card from '@mui/material/Card'
 import CardContent  from '@mui/material/CardContent'
 import Hazards from '/src/Images/UrbanPlanning/Environmental/HazardsMitigationPlan.png'
 import "./index.css"
+import {useState, useEffect} from 'react'
 
 const urbanPlanning = () => {
-    
+  const [shrink, setShrink] = useState(false);
 
-    return (
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setShrink(true);
+      } else {
+        setShrink(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  return (
+    <div className={`up-section${shrink ? 'shrink' : ''}`}>
+      
         <div id ="CardContainer">
         <Card id = "UP-Card">
           <CardContent class = "content">
@@ -42,6 +60,7 @@ const urbanPlanning = () => {
 </div>
 </CardContent>
 </Card>
+</div>
 </div>
   );
 };

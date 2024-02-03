@@ -64,12 +64,17 @@
   padding: 20px;
 }
 
+
 #contAbout h2 {
   text-align: center;
 }
 
 #contAbout p {
+  max-width: 700px;
+  margin: 10px auto;
+  text-align: left;
   padding: 15px;
+  
 }
 
 @media (max-width: 630px) {
@@ -86,7 +91,7 @@
   }
   #profilePicture {
     display: flex;
-    max-width: 240px;
+    max-width: 280px;
   }
   #profilePic{
     display: flex;

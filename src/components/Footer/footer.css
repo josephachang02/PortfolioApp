@@ -1,10 +1,15 @@
-body {
-  font-family: Arial, sans-serif;
+#page-container {
+  position: relative;
+  min-height: 100%
 }
+
 #footer {
-  background-color: #857366;
-  bottom:2px
+  background-color: hsl(25, 13%, 46%);
+  position:absolute;
+  bottom: 0;
+  width: 100%
 }
+
 #footerContainer {
   display: flex;
   justify-content: center;
@@ -37,4 +42,8 @@ body {
 
 #footer a:hover {
   color:#ffffffef
+}
+
+ #copyrightText {
+  font-size: 8px;
 }
