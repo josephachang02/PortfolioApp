@@ -11,9 +11,17 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import DescriptionIcon from '@mui/icons-material/Description';
 import React, { useEffect, useState } from 'react';
 import HomeCarousel from "../../components/Carousel/carousel";
+import Lottie from 'react-lottie'
+import wave from "../../../src/Images/CSS/hi_wave.json";
 
 const Home = () => {
   const [shrink, setShrink] = useState(false);
+
+  const defaultAnimation = {
+    loop: true,
+    autoplay: true,
+    animationData: wave,
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,10 +48,13 @@ const Home = () => {
       }, []);
 
     const iconHoverStyles = {
-        filter: 'brightness(95%)', // Adjust the brightness for the darker tint
+        filter: 'brightness(85%)', // Adjust the brightness for the darker tint
       };
       const GitHubIconStyle = {
-        color: '#444444',
+        color: '#6e5494',
+      };
+      const DescriptionHoverStyles = {
+        color: '#2d7c0a',
       };
     return (
         <>
@@ -53,12 +64,15 @@ const Home = () => {
         </div>
             
         <div id="aboutContent">
+        <div className="intro">
         <h2>Hi all, I'm Joe</h2>
+        <Lottie options={defaultAnimation} height={45} width={45} style={{ margin: '2px !important', alignItems: "center" }} />
+        </div>
             <p>
                 A passionate GIS Analyst integrating Software Engineering with programming applications. Eager to expand my horizon in GIS through story-telling using maps and data to illustrate the intricacies of our world as we know it.
             </p>
         <a href="https://www.linkedin.com/in/joechang022/" target ="_blank" rel="noopener noreferrer">
-          <LinkedInIcon sx={{ fontSize: '3em' }}/>
+          <LinkedInIcon sx={{ fontSize: '3.4em' }}/>
         </a>
         <a href="https://www.instagram.com/joea_chang/" target ="_blank" rel="noopener noreferrer" >
           <InstagramIcon sx={{
@@ -76,23 +90,20 @@ const Home = () => {
           <GitHubIcon sx={{ fontSize: '3em', color: 'black', '&:hover': GitHubIconStyle}}/>
         </a>
         <a href={Resume} download target="_blank" rel="noopener noreferrer">
-        <DescriptionIcon sx={{ fontSize: '3em', color: 'black', '&:hover': iconHoverStyles }} />
+        <DescriptionIcon sx={{ fontSize: '3em', color: '#22c620', '&:hover': DescriptionHoverStyles }} />
       </a>
     </div>
-    </div>
-    <br></br>
-    <div id="contAbout">
-    <h2>My Background</h2>
-<p>With a solid foundation built during my 3 years as a GIS Analyst at Google, I took a bold step into the dynamic world of software engineering. In August 2023, driven by a passion for coding and a desire to deepen my impact in GIS, I chose to embrace the challenges and opportunities of this new journey. Little did I know, the realm of software engineering held a vast array of languages and knowledge, fueling my curiosity to explore further.</p>
+  </div>
 <br></br>
+    <div id="contAbout">
+  <h2>My Background</h2>
+<p>With a solid foundation built during my 3 years as a GIS Analyst at Google, I took a bold step into the dynamic world of software engineering. In August 2023, driven by a passion for coding and a desire to deepen my impact in GIS, I chose to embrace the challenges and opportunities of this new journey. Little did I know, the realm of software engineering held a vast array of languages and knowledge, fueling my curiosity to explore further.</p>
+
 <p>Since leaving my full-time role, I've been working part-time at the First Starbucks in Pike Place Market. Simultaneously, I've been wholeheartedly pursuing my passions in GIS and software engineering. This positive journey has not only enriched my skills but has also opened doors to exciting possibilities that continue to fuel my drive and determination.</p>
-
-        </div>
-        
-
-
-<HomeCarousel/>
+  
+<HomeCarousel />
 {/* issues with the margin of the carousel overlapping footer */}
+</div>
 
         </>
     );
