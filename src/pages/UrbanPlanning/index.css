@@ -3,37 +3,37 @@
 }
 .up-section {
   margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 #CardContainer {
   display: flex;
-  overflow: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-around;
-  width: 100%
+  width: 100%;
+  margin: 10px;
+  margin-bottom: 15px;
+  min-height: 300px;
+  overflow: auto;
 }
 
 #UP-Card {
-  max-width: 700px;
-  min-height: 400px;
-  min-width: 300px;
-  display: flex;
-  align-items: center;
+  width: calc(40% - 10px); /* 50% width with space between */
+  margin-bottom: 20px;
   background-color: antiquewhite;
-  margin: auto;
   margin-top: 45px;
-  margin-right: 35px;
-  margin-left:35px;
 }
 
 .content {
   display: flex;
-  align-items: center;
-  min-width: 300px;
-  flex: 1;
+  flex-direction: column; /* Ensure content is displayed in column */
+  align-items: center; /* Center content horizontally */
 }
 
 .image {
-  max-width: 250px;
+  max-width: 100%; /* Adjust image width to fit container */
   margin: 20px;
   border-color: rgb(77, 77, 77);
 }
@@ -58,6 +58,28 @@
   border-color: #857366;
 }
 
+.CarouselContainer {
+  width: 100%; /* Ensure the carousel fills the entire width of the card */
+  overflow: hidden;
+}
+
+.CarouselContainer .carousel .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CarouselContainer .carousel .slide img {
+  max-width: 100%; /* Ensures the image fits within the container */
+  height: auto;
+}
+
+.CarouselContent {
+  display: flex;
+  flex-direction: column; /* Ensure content is displayed in column */
+  align-items: center; /* Center content horizontally */
+  width: 100%; /* Ensure content fills the entire width */
+}
 @media (max-width: 1020px) {
   #UP-Card {
     margin: 15px;

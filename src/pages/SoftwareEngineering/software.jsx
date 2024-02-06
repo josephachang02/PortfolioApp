@@ -14,7 +14,6 @@ const software = () => {
             <a href="https://github.com/josephachang02/FinanceApp" target="_blank" rel="noopener noreferrer">GitHub Link</a>
             <button><a href="https://peppy-custard-ae0f17.netlify.app" target="_blank" rel="noopener noreferrer">Link to Live Page</a></button>
             <p>Javascript functions to perform financial calculations based on the User's input</p>
-            <img src="default.jpg" alt="HTML" />
             <IconButton
               icon={<FaHtml5 />}
               className="html-button"

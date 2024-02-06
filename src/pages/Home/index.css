@@ -66,7 +66,6 @@
 
 #aboutContent h2 {
   text-align: center;
-  
 }
 
 #aboutContent p {
@@ -74,7 +73,7 @@
   margin-left: 20px;
   margin-right: 20px;
   text-decoration: none;
-    font-size: 24px;
+    font-size: 21px;
     color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
