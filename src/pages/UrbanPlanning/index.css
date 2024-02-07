@@ -3,6 +3,7 @@
 }
 .up-section {
   margin-top: 20px;
+  max-width: 900px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,7 +17,6 @@
   margin-bottom: 15px;
   min-height: 300px;
   overflow: auto;
-  min-width: 1000px;
 }
 
 #UP-Card {

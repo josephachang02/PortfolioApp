@@ -9,12 +9,20 @@ import { useState , useEffect} from 'react'
 import FerndaleCarousel from './ferndale'
 import HAPCarousel from './hap'
 import MonroeCarousel from './monroe'
+import UPAnimation from "../../../src/Images/CSS/UP.json";
+import Lottie from 'react-lottie'
 
 
 
 
 const urbanPlanning = () => {
   const [shrink, setShrink] = useState(false);
+
+  const MapAnimation = {
+    loop: true,
+    autoplay: true,
+    animationData: UPAnimation,
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +41,13 @@ const urbanPlanning = () => {
   }, []);
   return (
     <div className={`up-section${shrink ? 'shrink' : ''}`}>
-      
+      <div id = "intro">
+      <Lottie options={MapAnimation} height={450} width={450} style={{ margin: '2px !important', pointerEvents: "none", backgroundColor: "transparent", boxShadow: "0 0 10px #000", borderRadius: "25px"}} />
+        <p>Urban Planning encompasses the intricate systems governing city development and design worldwide. These systems interconnect in complex ways, shaping our cities into cohesive environments. Within Urban Planning, various topics and sectors converge to address the intricate challenges of sustainable city development and environmental preservation.
+        </p>
+        <p>During my undergraduate studies in Urban Planning, I acquired the necessary toolsets to analyze, collaborate, and propose solutions to urban challenges. This page showcases projects relevant to my academic experiences, demonstrating my ability to apply theoretical knowledge to practical scenarios.
+        </p>
+      </div>
         <div id ="CardContainer">
         <Card id = "UP-Card">
           <CardContent class = "content">

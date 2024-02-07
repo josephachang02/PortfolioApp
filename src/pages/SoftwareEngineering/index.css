@@ -1,0 +1,33 @@
+#SE-Card {
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+#Python-Card {
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .icon-image {
+    display: flex;
+    justify-content:center;
+    margin-top: 10px;
+  }
+  .card-content a {
+    color: #415366; /* Blue color, you can change it as needed */
+    text-decoration: none;
+    display: inline-block; /* Ensure link behaves like a block element */
+    margin-right: 10px; /* Adjust spacing between links if necessary */
+  }
+  
+  .card-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

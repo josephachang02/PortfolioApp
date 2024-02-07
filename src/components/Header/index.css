@@ -102,7 +102,7 @@ header:not(.shrink) .small-logo {
     font-weight: bolder;
   }
 
-@media (max-width: 680px) {
+@media (max-width: 700px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -198,7 +198,7 @@ header:not(.shrink) .small-logo {
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 490px) {
   header {
     height:150px;
   }

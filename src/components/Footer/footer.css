@@ -14,13 +14,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height:45px
+  height:35px;
+  margin: 5px
 }
 #footerContainer a {
-  margin: 0 25px;
+  margin: 0 30px;
+  size: 50px;
 }
 .footer-divider {
-  width: 2px;
+  width: 2.2px;
   height: 35px;
   background-color: hsla(0, 0%, 96%, 0.623);
   -webkit-transform: rotate(20deg);
@@ -38,12 +40,17 @@
   color: hsla(0, 0%, 96%, 0.623);
   text-decoration: none;
   transition: color 0.3s ease;
+
 }
 
 #footer a:hover {
   color:#ffffffef
 }
+.copyright {
+  text-align: center;
+}
 
  #copyrightText {
   font-size: 8px;
+  margin-bottom: 0.5rem;
 }
