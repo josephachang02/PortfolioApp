@@ -2,11 +2,13 @@ import React from 'react'
 import Card from '@mui/material/Card'
 import CardContent  from '@mui/material/CardContent'
 import Hazards from '/src/Images/UrbanPlanning/Environmental/HazardsMitigationPlan.png'
+import SeattleTransportation from '/src/Images/UrbanPlanning/seattleTransportation.jpg'
 import "./index.css"
 import { Carousel } from 'react-responsive-carousel'
 import { useState , useEffect} from 'react'
 import FerndaleCarousel from './ferndale'
-
+import HAPCarousel from './hap'
+import MonroeCarousel from './monroe'
 
 
 
@@ -61,10 +63,20 @@ const urbanPlanning = () => {
 </CardContent>
 </Card>
 <Card id = "UP-Card">
+<CardContent class = "CarouselContent">
+  <HAPCarousel />
+<div className="TextCard">
+<h3>Title</h3>
+<p>Date</p>
+<p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
+<button className ="button">Link to Thing</button>
+</div>
+</CardContent>
+</Card>
+<Card id = "UP-Card">
 <CardContent class = "content">
-  {/* Left Content (Image) */}
   <img
-    src= {Hazards}
+    src= {SeattleTransportation}
     alt="example"
     className="image"
   />
@@ -77,13 +89,8 @@ const urbanPlanning = () => {
 </CardContent>
 </Card>
 <Card id = "UP-Card">
-<CardContent class = "content">
-  {/* Left Content (Image) */}
-  <img
-    src= {Hazards}
-    alt="example"
-    className="image"
-  />
+<CardContent class = "CarouselContent">
+  <MonroeCarousel />
 <div className="TextCard">
 <h3>Title</h3>
 <p>Date</p>

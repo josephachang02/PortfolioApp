@@ -11,16 +11,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
   width: 100%;
   margin: 10px;
   margin-bottom: 15px;
   min-height: 300px;
   overflow: auto;
+  min-width: 1000px;
 }
 
 #UP-Card {
-  width: calc(40% - 10px); /* 50% width with space between */
+  width: calc(45% - 10px); /* 50% width with space between */
   margin-bottom: 20px;
   background-color: antiquewhite;
   margin-top: 45px;
@@ -61,6 +61,7 @@
 .CarouselContainer {
   width: 100%; /* Ensure the carousel fills the entire width of the card */
   overflow: hidden;
+  height:300px;
 }
 
 .CarouselContainer .carousel .slide {
@@ -80,23 +81,15 @@
   align-items: center; /* Center content horizontally */
   width: 100%; /* Ensure content fills the entire width */
 }
-@media (max-width: 1020px) {
-  #UP-Card {
-    margin: 15px;
-    max-width: 100%; /* Ensure the card takes full width on small screens */
-  }
 
-  .content {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center content in the vertical direction */
-    text-align: center; /* Center text content */
-  }
-
-  .image {
-    margin-bottom: 15px; /* Add some bottom margin for spacing */
-  }
+.shrink-header {
+  position:fixed;
+  top:0;
+  z-index: 50;
+  height:40px;
+  width: 100%;
+  transition: all 0.3s ease;
 }
-
 @media (max-width: 660px) {
   #CardContainer {
     flex-direction: column; /* Stack cards vertically on small screens */
