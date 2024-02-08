@@ -31,6 +31,9 @@ const Experience = () => {
     <div className={`experience-section${shrink ? 'shrink' : ''}`}>
       
 {/* Certificates */}
+<div id = "intro">
+  Over the past 4 years, I have developed my role as a GIS analyst 
+</div>
 <h2 style ={{textAlign: "center", fontFamily: 'Kaisei Tokumin', margin: "15px"}}>Experience</h2>
 <div className="container" style={{ padding: "15px", fontFamily: 'Kaisei Tokumin'}}>
         <div className="row justify-content-around">
@@ -111,7 +114,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
           {/* Second Card */}
           <div className="col-md-4 mb-4">
             <div className="card" style={{ width: "100%",marginTop: "35px" }}>
-              <img className="card-img-top card-img-custom" style = {{backgroundColor: "#283e83"}}src={WWU} alt="Card image cap"/>
+              <img className="card-img-top card-img-custom" style = {{backgroundColor: "rgb(20 67 134)"}}src={WWU} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Urban Planning</h5>
                 <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
@@ -135,9 +138,9 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
       <div className="container" style={{ padding: "15px", fontFamily: 'Kaisei Tokumin' }}>
         <div className="row justify-content-around" style= {{marginBottom: '35px'}}>
           {/* First Card */}
-          <div className="col-md-4">
+          <div className="tripleCard">
           <div className="card" style={{ width: "100%" ,marginTop: "35px"}}>
-              <img className="card-img-top card-img-custom" src={PerScholas} alt="Card image cap"/>
+              <img className="card-img-top card-img-custom" style = {{backgroundColor: "#09507c"}}  src={PerScholas} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Full-Stack Development</h5>
                 <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
@@ -158,7 +161,7 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
           </div>
 
           {/* Second Card */}
-          <div className="col-md-4 mb-4">
+          <div className="tripleCard">
             <div className="card" style={{ width: "100%" ,marginTop: "35px"}}>
               <img className="card-img-top card-img-custom" style={{ paddingBottom: "40px", justifyContent: "center",}}src={UniversityIllinois} alt="Card image cap" />
               <div className="card-body">
@@ -184,9 +187,9 @@ Utilized Census Tract and Collector Data to create a web map revealing the corre
           </div>
 
           {/* Third Card */}
-          <div className="col-md-4 mb-4">
+          <div className="tripleCard">
             <div className="card" style={{ width: "100%",marginTop: "35px"}}>
-              <img className="card-img-top card-img-custom" src={UM} alt="Card image cap"/>
+              <img className="card-img-top card-img-custom" style = {{backgroundColor: "#00274C"}} src={UM} alt="Card image cap"/>
               <div className="card-body">
                 <h5 className="card-title">Python for Everybody Specialization</h5>
                 <p className="card-text" style={{fontWeight: "lighter", fontSize: "13px"}}>
