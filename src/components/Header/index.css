@@ -99,7 +99,7 @@ header:not(.shrink) .small-logo {
 
 
   .NavTitle.active {
-    font-weight: bolder;
+    color: rgb(223, 223, 223);
   }
 
 @media (max-width: 700px) {

@@ -32,7 +32,7 @@ const Experience = () => {
       
 {/* Certificates */}
 <div id = "intro">
-  Over the past 4 years, I have developed my role as a GIS analyst 
+  This page highlights my educational and professional background that has shaped me today. Over the past 4 years, I have obtained a foundational background within the field of GIS and Software Engineering. These experiences have not only provided me with the expansion of growing education, but it has changed my outset in ability to perform tasks. 
 </div>
 <h2 style ={{textAlign: "center", fontFamily: 'Kaisei Tokumin', margin: "15px"}}>Experience</h2>
 <div className="container" style={{ padding: "15px", fontFamily: 'Kaisei Tokumin'}}>

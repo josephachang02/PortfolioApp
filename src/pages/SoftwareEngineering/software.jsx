@@ -1,6 +1,6 @@
-import React from 'react';
 import "./index.css";
 import IconButton from '../../components/Icon/IconButton';
+import { useState, useEffect } from 'react'
 import { IoLogoJavascript , IoLogoCss3} from "react-icons/io";
 import { FaHtml5 , FaReact , FaBootstrap , FaPython ,   } from "react-icons/fa"
 import { TbApi , TbSql  } from "react-icons/tb";
@@ -11,15 +11,32 @@ import SE from "../../../src/Images/CSS/se_working.json";
 
 
 const software = () => {
-  
+  const [shrink, setShrink] = useState(false);
+
   const softwareAnimation = {
     loop: true,
     autoplay: true,
     animationData: SE,
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setShrink(true);
+      } else {
+        setShrink(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div>
+    <div className= {`software-split-container${shrink ? 'shrink' : ''}`}>
       <div id ="intro">
       <Lottie options={softwareAnimation} height={180} width={180} style={{ margin: '2px !important', pointerEvents: "none"}} />
       <p> Over the past year I have started to develop my skills within Coding to pursue a role as a GIS Developer. My journey began through a Coding Bootcamp as many would in their first steps into the software engineering world. Through this Bootcamp i would gain a compound knowledge for the structure of Front-End and Back-End Development.</p>
