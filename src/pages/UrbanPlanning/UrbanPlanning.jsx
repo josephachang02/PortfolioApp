@@ -56,6 +56,7 @@ const urbanPlanning = () => {
               src= {Hazards}
               alt="example"
               className="image"
+              style = {{maxWidth: "35%"}}
             />
         <div className="TextCard">
         <h3>Hazard Mitigation Plan</h3>
@@ -95,8 +96,8 @@ const urbanPlanning = () => {
     className="image"
   />
 <div className="TextCard">
-<h3>Title</h3>
-<p>Date</p>
+<h3>Seattle Transportation System</h3>
+<p>2019</p>
 <p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
 <button className ="button">Link to Thing</button>
 </div>

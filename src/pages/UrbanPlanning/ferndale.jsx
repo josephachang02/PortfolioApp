@@ -46,7 +46,7 @@ const data = [
                       className="d-block w-100"
                       src={slide.image}
                       alt="slider image"
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: "cover" , height: "100%" }}
                     />
                   </Carousel.Item>
                 ))}

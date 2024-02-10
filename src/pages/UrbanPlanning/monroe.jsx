@@ -44,7 +44,7 @@ function MonroeCarousel() {
     return (
       <Container style={{ overflow: "hidden", height: "200px", position: "relative" }}>
         <Row className="justify-content-center">
-          <Col xs={12} md={8} lg={6}>
+          <Col >
             <div id="Carousel">
               <Carousel activeIndex={index} onSelect={handleSelect} controls={false}
             indicators={false} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, }}>
@@ -54,7 +54,7 @@ function MonroeCarousel() {
                       className="d-block w-100"
                       src={slide.image}
                       alt="slider image"
-                      style={{ objectFit: "contain" }}
+                      style={{ objectFit: "contain", minHeight: "400px", width: "100%" }}
                     />
                   </Carousel.Item>
                 ))}
