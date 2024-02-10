@@ -46,7 +46,7 @@ function HAPCarousel() {
                      
                       src={slide.image}
                       alt="slider image"
-                      style={{ objectFit: "contain", minHeight: "100px", maxHeight: "320px", maxWidth: "400px", minWidth: "300px"}}
+                      style={{ objectFit: "contain", minHeight: "200px", maxHeight: "320px", width: "500px", minWidth: "300px"}}
                     />
                   </Carousel.Item>
                 ))}

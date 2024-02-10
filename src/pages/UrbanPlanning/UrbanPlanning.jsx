@@ -42,7 +42,7 @@ const urbanPlanning = () => {
   return (
     <div className={`up-section${shrink ? 'shrink' : ''}`}>
       <div id = "intro">
-      <Lottie options={MapAnimation} height={450} width={450} style={{ margin: '2px !important', pointerEvents: "none", backgroundColor: "transparent", boxShadow: "0 0 10px #000", borderRadius: "25px"}} />
+      <Lottie options={MapAnimation} height={450} width={450} minHeight= {200} minWidth= {200} className="map-animation" style={{ margin: '2px !important', pointerEvents: "none", backgroundColor: "transparent", boxShadow: "0 0 10px rgb(195 189 189)", borderRadius: "25px", minWidth: '200px', minHeight: '200px'}} />
         <p>Urban Planning encompasses the intricate systems governing city development and design worldwide. These systems interconnect in complex ways, shaping our cities into cohesive environments. Within Urban Planning, various topics and sectors converge to address the intricate challenges of sustainable city development and environmental preservation.
         </p>
         <p>During my undergraduate studies in Urban Planning, I acquired the necessary toolsets to analyze, collaborate, and propose solutions to urban challenges. This page showcases projects relevant to my academic experiences, demonstrating my ability to apply theoretical knowledge to practical scenarios.
@@ -67,7 +67,8 @@ const urbanPlanning = () => {
       </CardContent>
     </Card>
 <Card id = "UP-Card">
-<CardContent class = "CarouselContent">
+<CardContent class = "content">
+
   <FerndaleCarousel />
 <div className="TextCard">
 <h3>Ferndale Comphrehensive Plan</h3>
@@ -78,7 +79,7 @@ const urbanPlanning = () => {
 </CardContent>
 </Card>
 <Card id = "UP-Card">
-<CardContent class = "CarouselContent">
+<CardContent class = "content">
   <HAPCarousel />
 <div className="TextCard">
 <h3>Title</h3>
@@ -104,7 +105,7 @@ const urbanPlanning = () => {
 </CardContent>
 </Card>
 <Card id = "UP-Card">
-<CardContent class = "CarouselContent">
+<CardContent class = "content">
   <MonroeCarousel />
 <div className="TextCard">
 <h3>Title</h3>
