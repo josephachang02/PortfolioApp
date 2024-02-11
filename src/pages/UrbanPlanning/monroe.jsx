@@ -42,19 +42,18 @@ function MonroeCarousel() {
     };
   
     return (
-      <Container style={{ overflow: "hidden", height: "200px", position: "relative" }}>
+      <Container >
         <Row className="justify-content-center">
-          <Col >
-            <div id="Carousel">
+          <Col>
+            <div id="Carousel" >
               <Carousel activeIndex={index} onSelect={handleSelect} controls={false}
-            indicators={false} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, }}>
+            indicators={false}  >
                 {data.map((slide, i) => (
-                  <Carousel.Item key={i} style={{ position: "relative", height: "100%" }}>
+                  <Carousel.Item key={i} style={{ position: "relative", height: "100%" ,minHeight: "100%"}}>
                     <img
-                      className="d-block w-100"
                       src={slide.image}
                       alt="slider image"
-                      style={{ objectFit: "contain", minHeight: "400px", width: "100%" }}
+                      style={{ objectFit: "contain", width: "100%", height:"110%",}}
                     />
                   </Carousel.Item>
                 ))}

@@ -71,9 +71,9 @@ const urbanPlanning = () => {
 
   <FerndaleCarousel />
 <div className="TextCard">
-<h3>Ferndale Comphrehensive Plan</h3>
-<p>2018</p>
-<p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
+<h3>Ferndale Comprehensive Plan</h3>
+<p>2019</p>
+<p>Presentation delivered to Ferndale, WA community members about the significance of Ferndale key assets as well as the components that are needed for future improvement. This presentation breaks down the </p>
 <button className ="button">Link to Thing</button>
 </div>
 </CardContent>
@@ -82,8 +82,8 @@ const urbanPlanning = () => {
 <CardContent class = "content">
   <HAPCarousel />
 <div className="TextCard">
-<h3>Title</h3>
-<p>Date</p>
+<h3>Student Housing Action Plan</h3>
+<p>2019</p>
 <p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
 <button className ="button">Link to Thing</button>
 </div>
@@ -108,8 +108,8 @@ const urbanPlanning = () => {
 <CardContent class = "content">
   <MonroeCarousel />
 <div className="TextCard">
-<h3>Title</h3>
-<p>Date</p>
+<h3>Monroe Community Planning</h3>
+<p>2019</p>
 <p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
 <button className ="button">Link to Thing</button>
 </div>

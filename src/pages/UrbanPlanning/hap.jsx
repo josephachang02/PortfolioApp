@@ -34,19 +34,18 @@ function HAPCarousel() {
     };
   
     return (
-      <Container style={{ overflow: "hidden", height: "300px", position: "relative" }}>
+      <Container >
         <Row className="justify-content-center">
-          <Col xs={12} md={8} lg={6} >
-            <div id="Carousel">
+          <Col>
+            <div id="Carousel" >
               <Carousel activeIndex={index} onSelect={handleSelect} controls={false}
-            indicators={false} style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, }} >
+            indicators={false}  >
                 {data.map((slide, i) => (
-                  <Carousel.Item key={i} style={{ position: "relative", height: "100%", width: "100%" }}>
+                  <Carousel.Item key={i} style={{ position: "relative", height: "100%" ,minHeight: "100%"}}>
                     <img
-                     
                       src={slide.image}
                       alt="slider image"
-                      style={{ objectFit: "contain", minHeight: "200px", maxHeight: "320px", width: "500px", minWidth: "300px"}}
+                      style={{ objectFit: "contain", width: "100%", height:"110%",}}
                     />
                   </Carousel.Item>
                 ))}
