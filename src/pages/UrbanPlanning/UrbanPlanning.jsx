@@ -73,7 +73,7 @@ const urbanPlanning = () => {
 <div className="TextCard">
 <h3>Ferndale Comprehensive Plan</h3>
 <p>2019</p>
-<p>Presentation delivered to Ferndale, WA community members about the significance of Ferndale key assets as well as the components that are needed for future improvement. This presentation breaks down the </p>
+<p>Presentation delivered to Ferndale, WA community members about the significance of Ferndale key assets as well as the components that are needed for future improvement. This presentation breaks down optimal Land-Use/Zoning, Transportation, and Environmental Sustainability.</p>
 <button className ="button">Link to Thing</button>
 </div>
 </CardContent>
@@ -84,7 +84,7 @@ const urbanPlanning = () => {
 <div className="TextCard">
 <h3>Student Housing Action Plan</h3>
 <p>2019</p>
-<p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
+<p>This project highlights a collective action plan created with two other colleagues in proposing future housing plans for students. This document entails survey collections and case studies across other universities that replicated similar housing demands for students. </p>
 <button className ="button">Link to Thing</button>
 </div>
 </CardContent>

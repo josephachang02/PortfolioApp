@@ -1,3 +1,170 @@
 .gis-sectionshrink {
     margin-top: 150px;
   }
+
+  .GIS-sectionshrink {
+    margin-top: 180px
+  }
+  .GIS-section {
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 75px;
+    min-height: 100%;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #GIS-Card {
+    width: 85%; /* 50% width with space between */
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row; /* Ensure content is displayed in column */
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .image {
+    width: 70%; /* Make sure image takes GIS full width of container */
+    height: 70%; /* Make sure image takes GIS full height of container */
+    object-fit: contain;
+    border-color: rgb(77, 77, 77);
+  }
+  
+  .TextCard {
+    margin: 15px;
+    max-height: 400px;
+  }
+  
+  .button {
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    color: white;
+    background-color: #857366;
+  }
+  
+  .button:hover {
+    color: black;
+    background-color: rgb(252, 251, 250);
+    border-color: #857366;
+  }
+  
+  .CarouselContainer {
+    width: 100%; /* Ensure the carousel fills the entire width of the card */
+    overflow:visible;
+    
+  }
+  
+  .CarouselContainer .carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .CarouselContainer .carousel .slide img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto;
+  }
+  
+  .CarouselContent {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    align-items: center;
+    width: 100%; 
+  }
+  
+  .shrink-header {
+    position:fixed;
+    top:0;
+    z-index: 50;
+    height:40px;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  #intro {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+  }
+  
+  #intro p {
+    justify-content: center;
+    max-width: 65%;
+  
+  }
+  
+  @media (min-width: 815px) {
+    .image {
+      height: 100%;
+      border-color: rgb(77, 77, 77);
+      padding:15px;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    #CardContainer {
+      flex-direction: column; /* Stack cards vertically on small screens */
+      align-items: center; /* Center cards horizontally */
+    }
+  
+    #GIS-Card {
+      flex-direction: column; /* Stack items vertically on small screens */
+      max-width: 850px; /* Ensure the card takes full width on small screens */
+      margin-bottom: 15px; /* Add some bottom margin for spacing between cards */
+      min-width: 300px;
+      max-height: 700px;
+  
+    }
+    .CarouselContent {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center content in the vertical direction */
+      text-align: center;
+    }
+    .content {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center content in the vertical direction */
+      text-align: center; /* Center text content */
+    }}
+  
+  @media (max-width: 580px) {
+    .GIS-sectionshrink {
+      margin-top: 200px;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .GIS-section {
+      margin-top: 20px;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #intro .map-animation {
+    width: 150px;
+    max-width: 150px;
+  }
+    
+  }
