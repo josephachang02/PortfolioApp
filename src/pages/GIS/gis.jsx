@@ -36,10 +36,8 @@ const gis = () => {
       <TabularMap />
     </div>
     <div id = "intro">
-        <p>Urban Planning encompasses the intricate systems governing city development and design worldwide. These systems interconnect in complex ways, shaping our cities into cohesive environments. Within Urban Planning, various topics and sectors converge to address the intricate challenges of sustainable city development and environmental preservation.
-        </p>
-        <p>During my undergraduate studies in Urban Planning, I acquired the necessary toolsets to analyze, collaborate, and propose solutions to urban challenges. This page showcases projects relevant to my academic experiences, demonstrating my ability to apply theoretical knowledge to practical scenarios.
-        </p>
+    <p>Geographic Information Systems (GIS) revolutionize the way we understand and manage spatial data, offering powerful tools to analyze, visualize, and interpret geographical information. GIS plays a pivotal role in various fields, from urban planning to environmental management, by providing insights into spatial relationships and patterns.</p>
+    <p>My journey with GIS began during my undergraduate studies, where I delved into the fundamentals of spatial analysis, data manipulation, and cartography. Through hands-on projects and coursework, I honed my skills in utilizing GIS software to address real-world challenges, ranging from urban infrastructure planning to natural resource management.</p>
       </div>
         <div id ="CardContainer">
         <Card id = "GIS-Card">
@@ -51,9 +49,9 @@ const gis = () => {
               style = {{maxWidth: "35%"}}
             />
         <div className="TextCard">
-        <h3>Hazard Mitigation Plan</h3>
-          <p>2019</p>
-          <p>Case-Study Mitigation Plan for San Diego to develop; Risk Assessments, Vulnerability Assessments, and Implementation Plans to enact on future long-term plans to build for resilient communities within San Diego. </p>
+        <h3>NDVI Classification</h3>
+          <p>2020</p>
+          <p>Using LandSat NDVI raster classification, this overlay depicts the general land-use through the Bellingham city-limits. This generalizes the land-use cover throughout the city of where city development extends to while providing an insight as the vegetation cover surrounding the city.</p>
           <button className ="button">Link to Thing</button>
         </div>
       </CardContent>
@@ -63,9 +61,9 @@ const gis = () => {
 
   <Atlas />
 <div className="TextCard">
-<h3>Ferndale Comprehensive Plan</h3>
-<p>2019</p>
-<p>Presentation delivered to Ferndale, WA community members about the significance of Ferndale key assets as well as the components that are needed for future improvement. This presentation breaks down optimal Land-Use/Zoning, Transportation, and Environmental Sustainability.</p>
+<h3>Atlas Mapping</h3>
+<p>2020</p>
+<p>This map highlights the coverage and upstream network of the Nooksack river in relation to the intersecting cities as well as depicting the areas where floodplains cross into city limits. These images, help to understand the significance of upstream networks as well as understanding the implications. </p>
 <button className ="button">Link to Thing</button>
 </div>
 </CardContent>
@@ -89,9 +87,9 @@ const gis = () => {
     className="image"
   />
 <div className="TextCard">
-<h3>Seattle Transportation System</h3>
-<p>2019</p>
-<p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
+<h3>Consultant Location</h3>
+<p>2018</p>
+<p>Given a set of parameters to be located within, there are numerous GIS tools to create a scen</p>
 <button className ="button">Link to Thing</button>
 </div>
 </CardContent>
