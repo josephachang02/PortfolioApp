@@ -105,6 +105,21 @@ const gis = () => {
 </div>
 </CardContent>
 </Card>
+
+
+
+<Card id = "GIS-Card">
+<CardContent class = "content">
+  {/* <MonroeCarousel /> */}
+<div className="TextCard">
+<h3>GIS Certificates</h3>
+<p>2022-2024</p>
+<p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
+<button className ="button">Link to Thing</button>
+</div>
+</CardContent>
+</Card>
+
 </div>
 </div>
 );
