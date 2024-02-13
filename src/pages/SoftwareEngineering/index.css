@@ -3,30 +3,62 @@
     margin-top: 0; 
     justify-content: space-around;
     transition: margin-top 0.4s ease-in-out;
+    max-width: 1400px;
+    max-height: 100vh;
   }
   
   .software-split-containershrink {
     margin-top: 150px; 
   }
 
+  .software-sectionshrink {
+    margin-top: 150px;
+  }
 
-#SE-Card {
-    border-radius: 5px;
-    border: 1px solid grey;
-    padding: 20px;
-    margin: 25px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+  .GIS-section {
+    margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px;
+    margin-bottom: 75px;
+    min-height: 100%;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
   }
   
-#Python-Card {
-    border-radius: 5px;
-    border: 1px solid grey;
-    padding: 20px;
-    margin: 25px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  #SE-Card {
+    width: 85%; /* 50% width with space between */
+    margin-bottom: 20px;
+    background-color: antiquewhite;
   }
+  
+  .content {
+    display: flex;
+    flex-direction: row; /* Ensure content is displayed in column */
+    align-items: center; /* Center content horizontally */
+  }
+
+  .TextCard {
+    margin: 15px;
+    max-height: 400px;
+  }
+
+  .image {
+    width: 70%; /* Make sure image takes GIS full width of container */
+    height: 70%; /* Make sure image takes GIS full height of container */
+    object-fit: contain;
+    border-color: rgb(77, 77, 77);
+  }
+
   .icon-image {
     display: flex;
     justify-content:center;
@@ -43,3 +75,42 @@
     text-decoration: underline; /* Underline on hover */
   }
   
+
+  .buttonLink {
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 14px;
+    transition-duration: 0.4s;
+    color: white;
+    background-color: #857366;
+    flex-wrap: wrap;
+  }
+
+  .buttonLink a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .buttonLink:hover {
+    color: black;
+    background-color: rgb(252, 251, 250);
+    border-color: #857366;
+  }
+
+
+  /* icon colors for the tools */
+  .react-button {
+    color: #36dff8; /* Change color as desired */
+  }
+  
+  .api-button {
+    color: green; /* Change color as desired */
+  }
+  
+  .bootstrap-button {
+    color: #563d7c; /* Change color as desired */
+  }
+
+  .mongo-button {
+    color: #00Ed64;
+  }
