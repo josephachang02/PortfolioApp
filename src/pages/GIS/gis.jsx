@@ -7,6 +7,7 @@ import CardContent  from '@mui/material/CardContent'
 import Classification from '/src/Images/GIS/Classification.jpg'
 import Consultant from '/src/Images/GIS/Consultant.jpg'
 import Atlas from './Atlas'
+import Cert from './cert'
 
 const gis = () => {
   const [shrink, setShrink] = useState(false);
@@ -110,11 +111,11 @@ const gis = () => {
 
 <Card id = "GIS-Card">
 <CardContent class = "content">
-  {/* <MonroeCarousel /> */}
+  <Cert />
 <div className="TextCard">
 <h3>GIS Certificates</h3>
 <p>2022-2024</p>
-<p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
+<p>Collection of Certificates obtained from Esri and UW that have allowed me to improve upon my GIS Skills and abilities.</p>
 <button className ="button">Link to Thing</button>
 </div>
 </CardContent>

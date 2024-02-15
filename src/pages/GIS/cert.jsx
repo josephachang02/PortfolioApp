@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import PythonCert from '/src/Images/GIS/PythonCert.png'
 import VisualCert from '/src/Images/GIS/3DVisualizationCert.png'
 import ArcGISOnline from '/src/Images/GIS/ArcGISOnlineCert.png'
-// get UW cert to be shown 
+import UWCert from '/src/Images/GIS/UWCertificate.png'
 
 const data = [
     {
@@ -19,7 +19,7 @@ const data = [
       image:(ArcGISOnline), 
      }, 
      {
-      image:(Atlas4), 
+      image:(UWCert), 
      }, 
      
   ]
