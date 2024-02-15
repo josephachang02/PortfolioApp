@@ -6,7 +6,7 @@ const Tabs = () => {
   const [activeTab, setActiveTab] = useState("mapbox");
  
   return (
-    <div className="Tabs">
+    <div className="Tabs" style = {{height: "100vh", }}>
       <ul className="nav">
         <TabNavItem title="London" id="London" activeTab={activeTab} setActiveTab={setActiveTab}/>
         <TabNavItem title="Leaflet" id="leaflet" activeTab={activeTab} setActiveTab={setActiveTab}/>
