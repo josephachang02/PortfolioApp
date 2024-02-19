@@ -8,6 +8,10 @@ import Classification from '/src/Images/GIS/Classification.jpg'
 import Consultant from '/src/Images/GIS/Consultant.jpg'
 import Atlas from './Atlas'
 import Cert from './cert'
+import Senior from './senior'
+import NDVI from './ndvi'
+import Interpolation from './interpolation'
+import Fish from './fish'
 
 const gis = () => {
   const [shrink, setShrink] = useState(false);
@@ -43,12 +47,7 @@ const gis = () => {
         <div id ="CardContainer">
         <Card id = "GIS-Card">
           <CardContent class = "content">
-            <img
-              src= {Classification}
-              alt="example"
-              className="image"
-              style = {{maxWidth: "35%"}}
-            />
+            < NDVI/>
         <div className="TextCard">
         <h3>NDVI Classification</h3>
           <p>2020</p>
@@ -57,6 +56,18 @@ const gis = () => {
         </div>
       </CardContent>
     </Card>
+<Card id = "GIS-Card">
+<CardContent class = "content">
+
+  <Senior />
+<div className="TextCard">
+<h3>Senior Project</h3>
+<p>2020</p>
+<p>This map highlights the coverage and upstream network of the Nooksack river in relation to the intersecting cities as well as depicting the areas where floodplains cross into city limits. These images, help to understand the significance of upstream networks as well as understanding the implications. </p>
+<button className ="button">Link to Thing</button>
+</div>
+</CardContent>
+</Card>
 <Card id = "GIS-Card">
 <CardContent class = "content">
 
@@ -71,10 +82,10 @@ const gis = () => {
 </Card>
 <Card id = "GIS-Card">
 <CardContent class = "content">
-  {/* <HAPCarousel />  */}
+<Interpolation />
 <div className="TextCard">
-<h3>Student Housing Action Plan</h3>
-<p>2019</p>
+<h3>Interpolation</h3>
+<p>2020</p>
 <p>This project highlights a collective action plan created with two other colleagues in proposing future housing plans for students. This document entails survey collections and case studies across other universities that replicated similar housing demands for students. </p>
 <button className ="button">Link to Thing</button>
 </div>
@@ -97,10 +108,10 @@ const gis = () => {
 </Card>
 <Card id = "GIS-Card">
 <CardContent class = "content">
-  {/* <MonroeCarousel /> */}
+  <Fish />
 <div className="TextCard">
-<h3>Monroe Community Planning</h3>
-<p>2019</p>
+<h3>Fish Density</h3>
+<p>2020</p>
 <p>Your example text goes here. You can add multiple lines or customize the content as needed.</p>
 <button className ="button">Link to Thing</button>
 </div>

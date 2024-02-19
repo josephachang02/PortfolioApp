@@ -1,17 +1,11 @@
-.gis-sectionshrink {
-    margin-top: 150px;
-  }
-
   .GIS-sectionshrink {
     margin-top: 180px
   }
   .GIS-section {
     margin-top: 20px;
     max-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
   }
+  
   #CardContainer {
     display: flex;
     flex-wrap: wrap;
