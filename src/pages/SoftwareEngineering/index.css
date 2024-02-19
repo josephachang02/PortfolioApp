@@ -1,9 +1,6 @@
 .software-split-container {
-    align-items: center;
     margin-top: 0; 
-    justify-content: space-around;
     transition: margin-top 0.4s ease-in-out;
-    max-width: 1400px;
     max-height: 100vh;
   }
   
@@ -92,9 +89,14 @@
   }
   
   .buttonLink:hover {
-    color: black;
     background-color: rgb(252, 251, 250);
     border-color: #857366;
+  }
+ 
+  .buttonLink:hover a {
+    background-color: rgb(252, 251, 250);
+    color:black;
+    transition-duration: 1.0s;
   }
 
 
