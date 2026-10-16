@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import './App.css'
-import Header from './components/Header/header'
-import Home from './pages/Home/home'
-import Experience from './pages/Experience/experience.jsx'
-import { Routes, Route } from 'react-router-dom'
-import Projects from './pages/Projects/projects'
-import GIS from './pages/GIS/gis'
-import UrbanPlanning from './pages/UrbanPlanning/UrbanPlanning.jsx'
-import Software from './pages/SoftwareEngineering/software.jsx'
-import Footer from './components/Footer/footer.jsx'
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header.jsx';
+import Footer from './components/Footer.jsx';
+import ScrollManager from './components/ScrollManager.jsx';
+import Home from './pages/Home.jsx';
+import GIS from './pages/GIS.jsx';
+import UrbanPlanning from './pages/UrbanPlanning.jsx';
+import Software from './pages/Software.jsx';
+import Experience from './pages/Experience.jsx';
+import NotFound from './pages/NotFound.jsx';
 
-// looking to implement react-component for browser view adjustment compatible for mobile
-// import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-
-function App() {
-
+// Route paths match the original site so existing links keep working
+export default function App() {
   return (
-    <div>
-    <Header />
-    <Routes>
-        <Route exact path ="/" element={<Home />} />
-        <Route exact path ="/Experience" element={<Experience />} />
-        <Route exact path ="/GIS" element={<GIS />} />
-        <Route exact path ="/UrbanPlanning" element={<UrbanPlanning />} />
-        <Route exact path ="/Projects" element={<Projects />} />
-        <Route exact path ="/software-engineering" element={<Software />} />
-    </Routes>
-    <Footer />
-    </div>
+    <>
+      <ScrollManager />
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/GIS" element={<GIS />} />
+          <Route path="/UrbanPlanning" element={<UrbanPlanning />} />
+          <Route path="/software-engineering" element={<Software />} />
+          <Route path="/Experience" element={<Experience />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default App;

@@ -1,13 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { BrowserRouter } from 'react-router-dom'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
+
+// HashRouter only for static previews without server rewrites (`npm run build:preview`)
+const Router = import.meta.env.VITE_HASH_ROUTER ? HashRouter : BrowserRouter;
+import App from './App.jsx';
+import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-    <App />    
-    </BrowserRouter>
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>,
-)
+);
