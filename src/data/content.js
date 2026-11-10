@@ -180,13 +180,36 @@ export const software = {
   ],
   python: {
     title: 'Python',
-    text: 'Python is foundational for the algorithms and scripts behind data work. Since late 2023 I have been learning it for data analysis and automation.',
+    text: 'Python is foundational for the algorithms and scripts behind data work. Since late 2023 I have been using it for spatial analysis, web mapping, and automation.',
     tools: ['Python', 'SQL', 'pandas', 'GeoPandas', 'Bokeh', 'BeautifulSoup', 'PostgreSQL', 'GDAL'],
-    // Small scripts shown as links under the Python section
-    links: [
-      { label: 'Static travel-time map (GeoPandas)', href: 'https://github.com/josephachang02/Static_Map' },
-      { label: 'Interactive plot (Bokeh)', href: 'https://github.com/josephachang02/InteractivePlot' },
-      { label: 'Web scraping (BeautifulSoup)', href: 'https://github.com/josephachang02/SoupScrape' },
+    // Rendered as full project cards under the Python heading (same layout as the projects above)
+    projects: [
+      {
+        id: 'static-map', year: '2026', title: 'Car vs. Transit: Static Travel-Time Map',
+        text: 'How long does it take to reach Helsinki Central Railway Station at rush hour? Using a 250 m travel-time grid, this GeoPandas script maps the trip by car and by public transport on matching class breaks, then maps the difference. Across 13,000 cells the median trip is 35 minutes by car and 49 by transit, and transit wins in only about 4% of cells, mostly along the eastern metro corridor.',
+        images: ['python/helsinki_static_car_transit', 'python/helsinki_static_difference', 'python/helsinki_static_map'],
+        tools: ['GeoPandas', 'Matplotlib', 'Choropleth classification', 'EPSG:3067'],
+        place: { name: 'Helsinki, Finland', lon: 24.94, lat: 60.17 },
+        links: [{ label: 'Code', href: 'https://github.com/josephachang02/Static_Map' }],
+      },
+      {
+        id: 'interactive-map', year: '2026', title: 'Interactive Travel-Time Explorer',
+        text: 'The same travel-time grid as an interactive Bokeh web map. Hover any cell to compare its travel times by transit, car, and on foot, or switch modes from the menu to recolor the whole region in the browser. It exports as one standalone HTML file with no server required.',
+        images: ['python/helsinki_interactive_pt', 'python/helsinki_interactive_car'],
+        tools: ['Bokeh', 'GeoPandas', 'Web Mercator', 'CustomJS'],
+        place: { name: 'Helsinki, Finland', lon: 24.94, lat: 60.17 },
+        links: [
+          { label: 'Live demo', href: '/demos/helsinki-travel-times.html' },
+          { label: 'Code', href: 'https://github.com/josephachang02/InteractivePlot' },
+        ],
+      },
+      {
+        id: 'package-tracker', year: '2026', title: 'GIS Package Tracker (Web Scraping)',
+        text: 'A BeautifulSoup scraper that reads PyPI’s package index for ten core GIS libraries and reports release counts, latest stable versions, Python requirements, and which platforms get prebuilt wheels. It writes CSVs and a summary chart, and is covered by offline unit tests in GitHub Actions. One finding: GDAL is the only package in the set with no wheels, which is why it is usually installed through conda.',
+        images: ['python/gis_package_tracker'],
+        tools: ['BeautifulSoup', 'requests', 'packaging', 'pytest', 'GitHub Actions'],
+        links: [{ label: 'Code', href: 'https://github.com/josephachang02/SoupScrape' }],
+      },
     ],
   },
 };
