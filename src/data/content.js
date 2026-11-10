@@ -19,7 +19,7 @@ export const site = {
   },
   background: [
     'With a solid foundation built during 3 years as a GIS Analyst at Google, I took a bold step into software engineering. In August 2023, driven by a passion for coding and a desire to deepen my impact in GIS, I chose to embrace the challenges of this new journey — and found a vast range of languages and tools that keep fueling my curiosity.',
-    'Since leaving my full-time role, I have worked part-time at the First Starbucks in Pike Place Market while pursuing GIS and software engineering. That path has sharpened my skills and opened doors that continue to drive me forward.',
+    'Along the way I worked part-time at the First Starbucks in Pike Place Market while studying GIS and software engineering. Since August 2024 I have been back in GIS full-time as a GIS Analyst at Apple, and I am completing a Graduate Certificate in Software Design & Development at the University of Washington.',
   ],
   photos: ['css/graduation_family', 'css/graduation', 'css/pike_brochure', 'css/pike', 'css/pike2', 'css/personal'],
 };
@@ -146,7 +146,7 @@ export const planning = {
 export const software = {
   title: 'Software Engineering',
   intro: [
-    'Over the past year I have been building my coding skills to pursue a role as a GIS Developer. It started with a full-stack bootcamp, which gave me a working knowledge of front-end and back-end development.',
+    'I have been building my coding skills to pursue a role as a GIS Developer. It started with a full-stack bootcamp that gave me a working knowledge of front-end and back-end development, and continues through UW’s Graduate Certificate in Software Design & Development, with a focus on C++, data structures, and systems programming.',
   ],
   projects: [
     {
@@ -164,7 +164,10 @@ export const software = {
       text: 'A React app that pulls team and league-wide statistics from RapidAPI. The home page lists every team and logo; selecting a team updates shared state so every other page shows that team’s data.',
       images: ['css/nba_app'],
       tools: ['React', 'REST API', 'Bootstrap'],
-      links: [], // TODO: add GitHub / live links — the old site pointed these at the Finance app by mistake
+      links: [
+        { label: 'Code', href: 'https://github.com/josephachang02/NBA_Application' },
+        { label: 'Live site', href: 'https://roaring-boba-8ef40e.netlify.app' },
+      ],
     },
     {
       id: 'workout', year: '2023', title: 'Workout App',
@@ -172,25 +175,37 @@ export const software = {
       text: 'A full-stack workout tracker where users sign in, browse exercises, and create, edit, or delete their own workouts with sets, reps, and target muscle groups.',
       images: ['css/workoutapp'],
       tools: ['React', 'REST API', 'MUI', 'MongoDB'],
-      links: [], // TODO: add GitHub / live links
+      links: [{ label: 'Code', href: 'https://github.com/josephachang02/WorkoutApplication' }],
     },
   ],
   python: {
     title: 'Python',
     text: 'Python is foundational for the algorithms and scripts behind data work. Since late 2023 I have been learning it for data analysis and automation.',
-    tools: ['Python', 'SQL', 'pandas', 'PostgreSQL', 'GDAL'],
+    tools: ['Python', 'SQL', 'pandas', 'GeoPandas', 'Bokeh', 'BeautifulSoup', 'PostgreSQL', 'GDAL'],
+    // Small scripts shown as links under the Python section
+    links: [
+      { label: 'Static travel-time map (GeoPandas)', href: 'https://github.com/josephachang02/Static_Map' },
+      { label: 'Interactive plot (Bokeh)', href: 'https://github.com/josephachang02/InteractivePlot' },
+      { label: 'Web scraping (BeautifulSoup)', href: 'https://github.com/josephachang02/SoupScrape' },
+    ],
   },
 };
 
 // ---------- Experience ----------
 export const experience = {
   intro:
-    'The education and professional experience that shaped me. Over the past four years I built a foundation in GIS and software engineering that changed how I approach my work.',
+    'The education and professional experience that shaped me: GIS work at Google Maps and Apple, and a growing foundation in software engineering that changed how I approach my work.',
   work: [
+    {
+      org: 'Apple', role: 'GIS Analyst', // no logo file yet, so the page shows a text badge
+      summary: 'Remote role (Austin, TX) since August 2024, delivering quarterly map data updates for global users.',
+      points: ['Quarterly updates to addresses, search queries, and geolocation data for new and existing features', 'Python scripts analyzing nationwide metrics to guide systemic improvements', 'Root-cause analysis of anomalies and performance regressions'],
+      places: [],
+    },
     {
       org: 'Google Maps', role: 'GIS Analyst / Project Team Lead', logo: 'css/googlemaps',
       summary: '3 years optimizing and managing geodata with SQL, Python, and ArcGIS Pro.',
-      points: ['Implemented 200+ Low Emission Zones across the EU', 'Mapped dense urban road networks missing in countries like Brazil and India', 'Safe destination routing for U.S. trucking'],
+      points: ['Implemented 100+ Low Emission Zones across EU cities including London, Paris, and Rome', 'Mapped dense urban road networks missing in countries like Brazil and India', 'Piloted Truck GPS routing across 1 million+ roads in the U.S. and Canada'],
       places: [
         { name: 'Low Emission Zones, EU', lon: 4.9, lat: 50.8 },
         { name: 'Road networks, Brazil', lon: -46.63, lat: -23.55 },
@@ -207,6 +222,11 @@ export const experience = {
     },
   ],
   education: [
+    {
+      org: 'University of Washington', role: 'Graduate Certificate in Software Design & Development (in progress)', logo: 'css/uw_logo',
+      summary: 'Post-baccalaureate program and bridge pathway into the M.S. in Computer Science & Software Engineering.',
+      points: ['Object-oriented programming in C++', 'Data structures and algorithms', 'Systems programming and software design/testing'],
+    },
     {
       org: 'University of Washington', role: 'Certificate in Geographic Information Systems', logo: 'css/uw_logo',
       summary: 'Used the Esri suite (ArcMap, ArcGIS Pro, Survey123) to deliver work in cartography, data analysis, and geospatial data management.',

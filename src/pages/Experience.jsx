@@ -5,7 +5,9 @@ function Entry({ e }) {
   return (
     <article className="entry">
       <div className="logo" style={e.logoBg ? { background: e.logoBg, borderColor: e.logoBg } : undefined}>
-        <img src={img(e.logo)} alt={`${e.org} logo`} loading="lazy" />
+        {e.logo
+          ? <img src={img(e.logo)} alt={`${e.org} logo`} loading="lazy" />
+          : <span className="logo-text">{e.org}</span> /* text badge when no logo image exists */}
       </div>
       <div>
         <div className="role">{e.role}</div>
