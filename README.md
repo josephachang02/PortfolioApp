@@ -24,5 +24,23 @@ npm run geo            # regenerate src/data/geo/*.json if you change the map ex
 
 ## Deploying on Render
 
-Build command `npm install && npm run build`, publish directory `dist`.
-Add a rewrite rule **`/*` → `/index.html`** so routes like `/GIS` work on refresh.
+The live site auto-deploys from the `master` branch of this repo. Push or merge to `master` and Render rebuilds within a few minutes.
+
+Render static site settings:
+
+- **Source:** `josephachang02/PortfolioApp`, branch `master`
+- **Build command:** `npm ci && npm run build`
+- **Publish directory:** `dist`
+- **Auto-Deploy:** After CI Checks Pass (waits for the GitHub Actions build check in `.github/workflows/build.yml`)
+- **Redirects/Rewrites:** `/*` → `/index.html`, action **Rewrite**, so routes like `/GIS` work on refresh
+
+Workflow for updates:
+
+```bash
+git pull
+npm run dev                # preview locally at http://localhost:5173
+git add -A && git commit -m "Describe the update"
+git push                   # build check runs, then Render deploys
+```
+
+Add `[skip render]` to a commit message to push without deploying.
